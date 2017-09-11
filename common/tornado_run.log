@@ -1,0 +1,2 @@
+09-11 18:12:36.674 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <qiniu.auth.Auth object at 0x03AB2970>.
+09-11 18:12:36.950 DEBUG qiniu.py [get_file_on_qiniu] [53] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/adhad?e=1505128356&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:Lo14g-wMxyHbUe965dd_moLoMPQ=
