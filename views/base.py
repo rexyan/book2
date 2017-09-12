@@ -1,5 +1,5 @@
 import tornado
-from pycket.session import SessionMixin
+from common.pycket.session import SessionMixin
 import json
 from common.encode import MyEncoder
 

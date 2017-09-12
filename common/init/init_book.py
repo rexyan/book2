@@ -8,10 +8,10 @@ from utils import auth
 
 log = getLogger('init_book.py')
 
-
 def init_book():
     book = Book(
         name=u'羊与钢的森林',
+        author_id = '59b7ed9f604a34044c7f6304',
         subtitle=u'一个调音师的成长故事',
         publication='2012-3',
         isdb='9787508679181',
@@ -43,5 +43,4 @@ if __name__ == '__main__':
         else:
             log.info('Book already initialized, skip.')
             sys.exit(1)
-
     init_book()

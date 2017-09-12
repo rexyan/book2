@@ -25,6 +25,7 @@ class BaseDoc(object):
 
 class Book(models.Document, BaseDoc):
     name = models.StringField(max_length=100)  # 书名
+    author_id = models.StringField(max_length=100)  # 作者ID
     subtitle = models.StringField(max_length=100)  # 副标题
     publication = models.StringField(max_length=20)  # 出版时间
     isdb = models.StringField(max_length=20)  # ISBN
@@ -63,3 +64,4 @@ class User(models.Document, BaseDoc):
     status = models.BooleanField(default=False)  # 用户状态
     down_remain = models.IntField(default=100)  # 下载剩余次数
     push_remain = models.IntField(default=100)  # 下载剩余次数
+
