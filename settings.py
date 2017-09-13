@@ -47,3 +47,7 @@ QINIU_SECRET_KEY = 'yN8Z8zR56DaQDmIxg77kCJ0BwHAqUauVzPeePg0d'
 QINIU_BUCKET_NAME = 'rexyan'
 QINIU_USER_DOMAIN = 'http://ovsf3r7sm.bkt.clouddn.com'
 LOCAL_TMP_PATH = ''
+
+
+# 豆瓣接口配置
+DOUBAN_GET_BOOK_INFO_API = 'https://api.douban.com/v2/book/'  # https://api.douban.com/v2/book/:id

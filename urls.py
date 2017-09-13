@@ -7,4 +7,6 @@ url = [
         (r"/base", BaseHandler),
         (r"/login", LoginHandler),
         (r"/register", RegisterHandler),
+        (r"/iframe_upload", IFrameHandler),
+        (r"/getbook", GetbookHandler),
       ]
