@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en" class="app">
+<head>
+  <meta charset="utf-8" />
+  <title>{% block title %} {% end %}</title>
+  <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="{{static_url('js/jPlayer/jplayer.flat.css')}}" type="text/css" />
+  <link rel="stylesheet" href="{{static_url('css/bootstrap.css')}}" type="text/css" />
+  <link rel="stylesheet" href="{{static_url('css/animate.css')}}" type="text/css" />
+  <link rel="stylesheet" href="{{static_url('css/font-awesome.min.css')}}" type="text/css" />
+  <link rel="stylesheet" href="{{static_url('css/simple-line-icons.css')}}" type="text/css" />
+  <link rel="stylesheet" href="{{static_url('css/font.css')}}" type="text/css" />
+  <link href="{{static_url('css/app.css')}}" rel="stylesheet" />
+    <script src="{{static_url('js/jquery.min.js')}}"></script>
+  <script type="text/javascript" src="{{static_url('layer/layer.js')}}"></script>
+    {% block js %} {% end %}
+    {% block css %} {% end %}
+    <!--[if lt IE 9]>
+    <script src="{{static_url('js/ie/html5shiv.js')}}"></script>
+    <script src="{{static_url('js/ie/respond.min.js')}}"></script>
+    <script src="{{static_url('js/ie/excanvas.js')}}"></script>
+  <![endif]-->
+</head>
+<body class="">
+  <section class="vbox">
+    <header class="bg-white-only header header-md navbar navbar-fixed-top-xs">
+      <div class="navbar-header aside bg-info nav-xs">
+        <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
+          <i class="icon-list"></i>
+        </a>
+        <a href="index.html" class="navbar-brand text-lt">
+          <i class="icon-earphones"></i>
+          <img src="{{static_url('images/logo.png')}}" alt="." class="hide">
+          <span class="hidden-nav-xs m-l-sm">Musik</span>
+        </a>
+        <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
+          <i class="icon-settings"></i>
+        </a>
+      </div>      <ul class="nav navbar-nav hidden-xs">
+        <li>
+          <a href="#nav,.navbar-header" data-toggle="class:nav-xs,nav-xs" class="text-muted">
+            <i class="fa fa-indent text"></i>
+            <i class="fa fa-dedent text-active"></i>
+          </a>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left input-s-lg m-t m-l-n-xs hidden-xs" role="search">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-sm bg-white btn-icon rounded"><i class="fa fa-search"></i></button>
+            </span>
+            <input type="text" class="form-control input-sm no-border rounded" placeholder="搜书名、作家、类型">
+          </div>
+        </div>
+      </form>
+      <div class="navbar-right ">
+        <ul class="nav navbar-nav m-n hidden-xs nav-user user">
+          <li class="hidden-xs">
+            <a href="#" class="dropdown-toggle lt" data-toggle="dropdown">
+              <i class="icon-bell"></i>
+              <span class="badge badge-sm up bg-danger count">2</span>
+            </a>
+            <section class="dropdown-menu aside-xl animated fadeInUp">
+              <section class="panel bg-white">
+                <div class="panel-heading b-light bg-light">
+                  <strong>You have <span class="count">2</span> notifications</strong>
+                </div>
+                <div class="list-group list-group-alt">
+                  <a href="#" class="media list-group-item">
+                    <span class="pull-left thumb-sm">
+                      <img src="{{static_url('images/a0.png')}}" alt="..." class="img-circle">
+                    </span>
+                    <span class="media-body block m-b-none">
+                      Use awesome animate.css<br>
+                      <small class="text-muted">10 minutes ago</small>
+                    </span>
+                  </a>
+                  <a href="#" class="media list-group-item">
+                    <span class="media-body block m-b-none">
+                      1.0 initial released<br>
+                      <small class="text-muted">1 hour ago</small>
+                    </span>
+                  </a>
+                </div>
+                <div class="panel-footer text-sm">
+                  <a href="#" class="pull-right"><i class="fa fa-cog"></i></a>
+                  <a href="#notes" data-toggle="class:show animated fadeInRight">See all the notifications</a>
+                </div>
+              </section>
+            </section>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle bg clear" data-toggle="dropdown">
+              <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                <img src=" {{static_url('images/a0.png')}}" alt="...">
+              </span>
+              John.Smith <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu animated fadeInRight">
+              <li>
+                <span class="arrow top"></span>
+                <a href="#">Settings</a>
+              </li>
+              <li>
+                <a href="profile.html">Profile</a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="badge bg-danger pull-right">3</span>
+                  Notifications
+                </a>
+              </li>
+              <li>
+                <a href="docs.html">Help</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="modal.lockme.html" data-toggle="ajaxModal" >Logout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <section class="hbox stretch">
+        <!-- .aside -->
+        <aside class="bg-black dk nav-xs aside hidden-print" id="nav">
+          <section class="vbox">
+            <section class="w-f-md scrollable">
+              <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px" data-railOpacity="0.2">
+
+
+
+                <!-- nav -->
+                <nav class="nav-primary hidden-xs">
+                  <ul class="nav bg clearfix">
+                    <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted">
+                      Discover
+                    </li>
+                    <li>
+                      <a href="/index">
+                        <i class="icon-notebook text-success"></i>
+                          <span class="font-bold">主页</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/upload">
+                        <i class="icon-music-tone-alt icon text-info"></i>
+                        <b class="badge bg-primary pull-right">+6</b>
+                       <span class="font-bold">上传</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/login">
+                        <i class="icon-drawer icon text-primary-lter"></i>
+                        <span class="font-bold">登录</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/register">
+                        <i class="icon-list icon  text-info-dker"></i>
+                        <span class="font-bold">注册</span>
+                      </a>
+                    </li>
+                    <!--<li>-->
+                      <!--<a href="video.html" data-target="#content" data-el="#bjax-el" data-replace="true">-->
+                        <!--<i class="icon-social-youtube icon  text-primary"></i>-->
+                        <!--<span class="font-bold">Video</span>-->
+                      <!--</a>-->
+                    <!--</li>-->
+                    <li class="m-b hidden-nav-xs"></li>
+                  </ul>
+                  <ul class="nav" data-ride="collapse">
+                    <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted">
+                      Interface
+                    </li>
+                    <!--<li >-->
+                      <!--<a href="#" class="auto">-->
+                        <!--<span class="pull-right text-muted">-->
+                          <!--<i class="fa fa-angle-left text"></i>-->
+                          <!--<i class="fa fa-angle-down text-active"></i>-->
+                        <!--</span>-->
+                        <!--<i class="icon-screen-desktop icon">-->
+                        <!--</i>-->
+                        <!--<span>Layouts</span>-->
+                      <!--</a>-->
+                      <!--<ul class="nav dk text-sm">-->
+                        <!--<li >-->
+                          <!--<a href="layout-color.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Color option</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="layout-boxed.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Boxed layout</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="layout-fluid.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Fluid layout</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                      <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li >-->
+                      <!--<a href="#" class="auto">-->
+                        <!--<span class="pull-right text-muted">-->
+                          <!--<i class="fa fa-angle-left text"></i>-->
+                          <!--<i class="fa fa-angle-down text-active"></i>-->
+                        <!--</span>-->
+                        <!--<i class="icon-chemistry icon">-->
+                        <!--</i>-->
+                        <!--<span>UI Kit</span>-->
+                      <!--</a>-->
+                      <!--<ul class="nav dk text-sm">-->
+                        <!--<li >-->
+                          <!--<a href="buttons.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Buttons</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="icons.html" class="auto">-->
+                            <!--<b class="badge bg-info pull-right">369</b>-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Icons</span>-->
+                          <!--</a>-->
+                        <!--</li><li >-->
+                          <!--<a href="http://www.weidea.net" class="auto">-->
+                            <!--<b class="badge bg-info pull-right">369</b>-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>More</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="grid.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Grid</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="widgets.html" class="auto">-->
+                            <!--<b class="badge bg-dark pull-right">8</b>-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Widgets</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="components.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Components</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="list.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>List group</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="#table" class="auto">-->
+                            <!--<span class="pull-right text-muted">-->
+                              <!--<i class="fa fa-angle-left text"></i>-->
+                              <!--<i class="fa fa-angle-down text-active"></i>-->
+                            <!--</span>-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Table</span>-->
+                          <!--</a>-->
+                          <!--<ul class="nav dker">-->
+                            <!--<li >-->
+                              <!--<a href="table-static.html">-->
+                                <!--<i class="fa fa-angle-right"></i>-->
+                                <!--<span>Table static</span>-->
+                              <!--</a>-->
+                            <!--</li>-->
+                            <!--<li >-->
+                              <!--<a href="table-datatable.html">-->
+                                <!--<i class="fa fa-angle-right"></i>-->
+                                <!--<span>Datatable</span>-->
+                              <!--</a>-->
+                            <!--</li>-->
+                          <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="#form" class="auto">-->
+                            <!--<span class="pull-right text-muted">-->
+                              <!--<i class="fa fa-angle-left text"></i>-->
+                              <!--<i class="fa fa-angle-down text-active"></i>-->
+                            <!--</span>-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Form</span>-->
+                          <!--</a>-->
+                          <!--<ul class="nav dker">-->
+                            <!--<li >-->
+                              <!--<a href="form-elements.html">-->
+                                <!--<i class="fa fa-angle-right"></i>-->
+                                <!--<span>Form elements</span>-->
+                              <!--</a>-->
+                            <!--</li>-->
+                            <!--<li >-->
+                              <!--<a href="form-validation.html">-->
+                                <!--<i class="fa fa-angle-right"></i>-->
+                                <!--<span>Form validation</span>-->
+                              <!--</a>-->
+                            <!--</li>-->
+                            <!--<li >-->
+                              <!--<a href="form-wizard.html">-->
+                                <!--<i class="fa fa-angle-right"></i>-->
+                                <!--<span>Form wizard</span>-->
+                              <!--</a>-->
+                            <!--</li>-->
+                          <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="chart.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Chart</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="portlet.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Portlet</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="timeline.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Timeline</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                      <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li >-->
+                      <!--<a href="#" class="auto">-->
+                        <!--<span class="pull-right text-muted">-->
+                          <!--<i class="fa fa-angle-left text"></i>-->
+                          <!--<i class="fa fa-angle-down text-active"></i>-->
+                        <!--</span>-->
+                        <!--<i class="icon-grid icon">-->
+                        <!--</i>-->
+                        <!--<span>Pages</span>-->
+                      <!--</a>-->
+                      <!--<ul class="nav dk text-sm">-->
+                        <!--<li >-->
+                          <!--<a href="profile.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Profile</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="blog.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Blog</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="invoice.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Invoice</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="gmap.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Google Map</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="jvectormap.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Vector Map</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="signin.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Signin</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="signup.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>Signup</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                        <!--<li >-->
+                          <!--<a href="404.html" class="auto">-->
+                            <!--<i class="fa fa-angle-right text-xs"></i>-->
+
+                            <!--<span>404</span>-->
+                          <!--</a>-->
+                        <!--</li>-->
+                      <!--</ul>-->
+                    <!--</li>-->
+                  </ul>
+                  <ul class="nav text-sm">
+                    <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted">
+                      <span class="pull-right"><a href="#"><i class="icon-plus i-lg"></i></a></span>
+                      Playlist
+                    </li>
+                    <!--<li>-->
+                      <!--<a href="#">-->
+                        <!--<i class="icon-music-tone icon"></i>-->
+                        <!--<span>Hip-Pop</span>-->
+                      <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                      <!--<a href="#">-->
+                        <!--<i class="icon-playlist icon text-success-lter"></i>-->
+                        <!--<b class="badge bg-success dker pull-right">9</b>-->
+                        <!--<span>Jazz</span>-->
+                      <!--</a>-->
+                    <!--</li>-->
+                  </ul>
+                </nav>
+                <!-- / nav -->
+              </div>
+            </section>
+
+       <!--      <footer class="footer hidden-xs no-padder text-center-nav-xs">
+              <div class="bg hidden-xs ">
+                  <div class="dropdown dropup wrapper-sm clearfix">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <span class="thumb-sm avatar pull-left m-l-xs">
+                        <img src="images/a3.png" class="dker" alt="...">
+                        <i class="on b-black"></i>
+                      </span>
+                      <span class="hidden-nav-xs clear">
+                        <span class="block m-l">
+                          <strong class="font-bold text-lt">John.Smith</strong>
+                          <b class="caret"></b>
+                        </span>
+                        <span class="text-muted text-xs block m-l">Art Director</span>
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight aside text-left">
+                      <li>
+                        <span class="arrow bottom hidden-nav-xs"></span>
+                        <a href="#">Settings</a>
+                      </li>
+                      <li>
+                        <a href="profile.html">Profile</a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="badge bg-danger pull-right">3</span>
+                          Notifications
+                        </a>
+                      </li>
+                      <li>
+                        <a href="docs.html">Help</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="modal.lockme.html" data-toggle="ajaxModal" >Logout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>            </footer> -->
+          </section>
+        </aside>
+        <!-- /.aside -->
+        <section id="content">
+          <section class="hbox stretch">
+            <section>
+              <section class="vbox">
+                   {% block body %} {% end %}
+                <!--<section class="scrollable padder-lg w-f-md" id="bjax-target">-->
+                  <!--<a href="#" class="pull-right text-muted m-t-lg" data-toggle="class:fa-spin" ><i class="icon-refresh i-lg  inline"  id="refresh"></i></a>-->
+                  <!--<h4 class="font-thin m-b">热门书籍 <span class="musicbar animate inline m-l-sm" style="width:20px;height:20px">-->
+                    <!--<span class="bar1 a1 bg-primary lter"></span>-->
+                    <!--<span class="bar2 a2 bg-info lt"></span>-->
+                    <!--<span class="bar3 a3 bg-success"></span>-->
+                    <!--<span class="bar4 a4 bg-warning dk"></span>-->
+                    <!--<span class="bar5 a5 bg-danger dker"></span>-->
+                  <!--</span></h4>-->
+                  <!--<div class="row row-sm">-->
+
+                    <!--<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">-->
+                      <!--<div class="item">-->
+                        <!--<div class="pos-rlt">-->
+                        <!--<div class="top">-->
+                            <!--<span class="pull-right m-t-sm m-r-sm badge bg-info">6</span>-->
+                          <!--</div>-->
+                          <!--<div class="bottom">-->
+                            <!--<span class="badge bg-info m-l-sm m-b-sm">1000</span>-->
+
+                          <!--</div>-->
+                          <!--<div class="item-overlay opacity r r-2x bg-black">-->
+                            <!--<div class="text-info padder m-t-sm text-sm">-->
+                              <!--<i class="fa fa-star"></i>-->
+                              <!--<i class="fa fa-star"></i>-->
+                              <!--<i class="fa fa-star"></i>-->
+                              <!--<i class="fa fa-star"></i>-->
+                              <!--<i class="fa fa-star-o text-muted"></i>-->
+                            <!--</div>-->
+                             <!--<div class="center text-center m-t-n">-->
+                              <!--<a href="#"><i class="icon-cloud-download i-3x"></i></a>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; <div class="center text-center m-t-n">-->
+                              <!--<a href="#"><i class="icon-control-down i-2x"></i></a>-->
+                            <!--</div> &ndash;&gt;-->
+                            <!--<div class="bottom padder m-b-sm">-->
+                               <!--<a href="#" class="pull-right active" data-toggle="class">-->
+                                <!--<i class="fa fa-heart-o text"></i>-->
+                                <!--<i class="fa fa-heart text-active text-danger"></i>-->
+                              <!--</a>-->
+                              <!--<a href="#" class="" data-toggle="class">-->
+                                <!--<i class="fa fa-plus-circle text"></i>-->
+                                <!--<i class="fa fa-check-circle text-active text-info"></i>-->
+                              <!--</a>-->
+                            <!--</div>-->
+                          <!--</div>-->
+
+                          <!--<a href="#"><img src='' alt="" class="r r-2x img-full"></a>-->
+                        <!--</div>-->
+                        <!--<div class="padder-v">-->
+                          <!--<a href="#" class="text-ellipsis"><strong></strong></a>-->
+                          <!--<a href="#" class="text-ellipsis text-xs text-muted"></a>-->
+                        <!--</div>-->
+                      <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash;<div class="clearfix visible-xs"></div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="pos-rlt">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="item-overlay opacity r r-2x bg-black">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="text-info padder m-t-sm text-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star-o text-muted"></i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="center text-center m-t-n">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#"><i class="icon-control-play i-2x"></i></a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bottom padder m-b-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#" class="pull-right">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-heart-o"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-plus-circle"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#"><img src="{{static_url('images/p3.jpg')}}" alt="" class="r r-2x img-full"></a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="padder-v">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis">Morbi id neque quam liquam sollicitudin</a>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis text-xs text-muted">Allen JH</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="pos-rlt">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="item-overlay opacity r r-2x bg-black">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="text-info padder m-t-sm text-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star-o text-muted"></i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="center text-center m-t-n">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#"><i class="icon-control-play i-2x"></i></a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bottom padder m-b-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#" class="pull-right">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-heart-o"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-plus-circle"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="top">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="pull-right m-t-n-xs m-r-sm text-white">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-bookmark i-lg"></i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#"><img src="{{static_url('images/p4.jpg')}}" alt="" class="r r-2x img-full"></a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="padder-v">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis">Tincidunt libero</a>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis text-xs text-muted">Amanda Conlan</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="clearfix visible-xs"></div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="pos-rlt">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="item-overlay opacity r r-2x bg-black">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="text-info padder m-t-sm text-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star-o text-muted"></i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="center text-center m-t-n">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#"><i class="icon-control-play i-2x"></i></a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bottom padder m-b-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#" class="pull-right">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-heart-o"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-plus-circle"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#"><img src="{{static_url('images/p5.jpg')}}" alt="" class="r r-2x img-full"></a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="padder-v">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis">Fermentum diam</a>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis text-xs text-muted">Nisa Colen</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="pos-rlt">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="top">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="pull-right m-t-sm m-r-sm badge bg-info">6</span>&ndash;&gt;-->
+                          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="item-overlay opacity r r-2x bg-black">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="text-info padder m-t-sm text-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star-o text-muted"></i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="center text-center m-t-n">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#"><i class="icon-control-play i-2x"></i></a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bottom padder m-b-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#" class="pull-right">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-heart-o"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-plus-circle"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;</div>                          &ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#"><img src="{{static_url('images/p6.jpg')}}" alt="" class="r r-2x img-full"></a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="padder-v">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis">Habitant</a>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis text-xs text-muted">Dan Doorack</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="clearfix visible-xs"></div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="pos-rlt">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="item-overlay opacity r r-2x bg-black">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="text-info padder m-t-sm text-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star-o text-muted"></i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="center text-center m-t-n">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#"><i class="icon-control-play i-2x"></i></a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bottom padder m-b-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#" class="pull-right">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-heart-o"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-plus-circle"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="top">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="pull-right m-t-sm m-r-sm badge bg-white">12</span>&ndash;&gt;-->
+                          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#"><img src="{{static_url('images/p7.jpg')}}" alt="" class="r r-2x img-full"></a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="padder-v">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis">Vivamus vel tincidunt libero</a>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis text-xs text-muted">Ligula H</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="pos-rlt">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="item-overlay opacity r r-2x bg-black">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="text-info padder m-t-sm text-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star-o text-muted"></i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="center text-center m-t-n">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#"><i class="icon-control-play i-2x"></i></a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bottom padder m-b-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#" class="pull-right">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-heart-o"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-plus-circle"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#"><img src="{{static_url('images/p8.jpg')}}" alt="" class="r r-2x img-full"></a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="padder-v">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis">Aliquam sollicitudin venenati</a>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis text-xs text-muted">James East</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="clearfix visible-xs"></div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="pos-rlt">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="item-overlay opacity r r-2x bg-black">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="text-info padder m-t-sm text-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star-o text-muted"></i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="center text-center m-t-n">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#"><i class="icon-control-play i-2x"></i></a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bottom padder m-b-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#" class="pull-right">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-heart-o"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-plus-circle"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#"><img src="{{static_url('images/p9.jpg')}}" alt="" class="r r-2x img-full"></a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="padder-v">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis">Lementum ligula vitae</a>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis text-xs text-muted">Lauren Taylor</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="pos-rlt">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="item-overlay r r-2x bg-light dker active">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="text-info padder m-t-sm text-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star-o text-muted"></i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="center text-center m-t-n">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#" data-toggle="class" class="active">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="icon-control-play i-2x text"></i>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="icon-control-pause i-2x text-active"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bottom padder m-b-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#" class="pull-right" data-toggle="class">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-heart-o text"></i>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-heart text-active text-danger"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#" class="active" data-toggle="class">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-plus-circle text"></i>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-check-circle text-active text-info"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#"><img src="{{static_url('images/p10.jpg')}}" alt="" class="r r-2x img-full"></a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="padder-v">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis">Egestas dui nec fermentum </a>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis text-xs text-muted">Chris Fox</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="clearfix visible-xs"></div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="pos-rlt">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="item-overlay opacity r r-2x bg-black">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="text-info padder m-t-sm text-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star-o text-muted"></i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="center text-center m-t-n">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#"><i class="icon-control-play i-2x"></i></a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bottom padder m-b-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#" class="pull-right">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-heart-o"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-plus-circle"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#"><img src="{{static_url('images/p11.jpg')}}" alt="" class="r r-2x img-full"></a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="padder-v">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis">Aliquam sollicitudin venenatis ipsum</a>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis text-xs text-muted">Jack Jason</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="pos-rlt">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="item-overlay opacity r r-2x bg-black">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="text-info padder m-t-sm text-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<i class="fa fa-star-o text-muted"></i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="center text-center m-t-n">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#"><i class="icon-control-play i-2x"></i></a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bottom padder m-b-sm">&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#" class="pull-right">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-heart-o"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                              <!--&lt;!&ndash;<a href="#">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-plus-circle"></i>&ndash;&gt;-->
+                              <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#"><img src="{{static_url('images/p12.jpg')}}" alt="" class="r r-2x img-full"></a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="padder-v">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis">Vestibulum ullamcorper</a>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<a href="#" class="text-ellipsis text-xs text-muted">MM &amp; DD</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                  <!--</div>-->
+                  <!--<div class="row">-->
+                    <!--<div class="col-md-7">-->
+                      <!--<h3 class="font-thin">热门类型</h3>-->
+                      <!--<div class="row row-sm">-->
+                        <!--<div class="col-xs-6 col-sm-3">-->
+                          <!--<div class="item">-->
+                            <!--<div class="pos-rlt">-->
+                              <!--<div class="">-->
+                                <!--<div class="center text-center m-t-n">-->
+                                  <!--<a href="#"><i class=""></i></a>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                              <!--<a href="#"><img src="{{static_url('images/a2.png')}}" alt="" class="r r-2x img-full"></a>-->
+                            <!--</div>-->
+                            <!--<div class="padder-v">-->
+                              <!--<a href="#" class="text-ellipsis">文学</a>-->
+                              <!--<a href="#" class="text-ellipsis text-xs text-muted">小说、散文、戏剧</a>-->
+                            <!--</div>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                    <!--&lt;!&ndash;     <div class="col-xs-6 col-sm-3">-->
+                          <!--<div class="item">-->
+                            <!--<div class="pos-rlt">-->
+                              <!--<div class="item-overlay opacity r r-2x bg-black">-->
+                                <!--<div class="center text-center m-t-n">-->
+                                  <!--<a href="#"><i class="fa fa-play-circle i-2x"></i></a>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                              <!--<a href="#"><img src="images/a3.png" alt="" class="r r-2x img-full"></a>-->
+                            <!--</div>-->
+                            <!--<div class="padder-v">-->
+                              <!--<a href="#" class="text-ellipsis">Hope</a>-->
+                              <!--<a href="#" class="text-ellipsis text-xs text-muted">Miya</a>-->
+                            <!--</div>-->
+                          <!--</div>-->
+                        <!--</div> &ndash;&gt;-->
+                        <!--&lt;!&ndash; <div class="col-xs-6 col-sm-3">-->
+                          <!--<div class="item">-->
+                            <!--<div class="pos-rlt">-->
+                              <!--<div class="item-overlay opacity r r-2x bg-black">-->
+                                <!--<div class="center text-center m-t-n">-->
+                                  <!--<a href="#"><i class="fa fa-play-circle i-2x"></i></a>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                              <!--<a href="#"><img src="images/a8.png" alt="" class="r r-2x img-full"></a>-->
+                            <!--</div>-->
+                            <!--<div class="padder-v">-->
+                              <!--<a href="#" class="text-ellipsis">Listen wind</a>-->
+                              <!--<a href="#" class="text-ellipsis text-xs text-muted">Soyia Jess</a>-->
+                            <!--</div>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-6 col-sm-3">-->
+                          <!--<div class="item">-->
+                            <!--<div class="pos-rlt">-->
+                              <!--<div class="item-overlay opacity r r-2x bg-black">-->
+                                <!--<div class="center text-center m-t-n">-->
+                                  <!--<a href="#"><i class="fa fa-play-circle i-2x"></i></a>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                              <!--<a href="#"><img src="images/a9.png" alt="" class="r r-2x img-full"></a>-->
+                            <!--</div>-->
+                            <!--<div class="padder-v">-->
+                              <!--<a href="#" class="text-ellipsis">Breaking me</a>-->
+                              <!--<a href="#" class="text-ellipsis text-xs text-muted">Pett JA</a>-->
+                            <!--</div>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-6 col-sm-3">-->
+                          <!--<div class="item">-->
+                            <!--<div class="pos-rlt">-->
+                              <!--<div class="item-overlay opacity r r-2x bg-black">-->
+                                <!--<div class="center text-center m-t-n">-->
+                                  <!--<a href="#"><i class="fa fa-play-circle i-2x"></i></a>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                              <!--<a href="#"><img src="images/a1.png" alt="" class="r r-2x img-full"></a>-->
+                            <!--</div>-->
+                            <!--<div class="padder-v">-->
+                              <!--<a href="#" class="text-ellipsis">Nothing</a>-->
+                              <!--<a href="#" class="text-ellipsis text-xs text-muted">Willion</a>-->
+                            <!--</div>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-6 col-sm-3">-->
+                          <!--<div class="item">-->
+                            <!--<div class="pos-rlt">-->
+                              <!--<div class="item-overlay opacity r r-2x bg-black">-->
+                                <!--<div class="center text-center m-t-n">-->
+                                  <!--<a href="#"><i class="fa fa-play-circle i-2x"></i></a>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                              <!--<a href="#"><img src="images/a6.png" alt="" class="r r-2x img-full"></a>-->
+                            <!--</div>-->
+                            <!--<div class="padder-v">-->
+                              <!--<a href="#" class="text-ellipsis">Panda Style</a>-->
+                              <!--<a href="#" class="text-ellipsis text-xs text-muted">Lionie</a>-->
+                            <!--</div>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-6 col-sm-3">-->
+                          <!--<div class="item">-->
+                            <!--<div class="pos-rlt">-->
+                              <!--<div class="item-overlay opacity r r-2x bg-black">-->
+                                <!--<div class="center text-center m-t-n">-->
+                                  <!--<a href="#"><i class="fa fa-play-circle i-2x"></i></a>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                              <!--<a href="#"><img src="images/a7.png" alt="" class="r r-2x img-full"></a>-->
+                            <!--</div>-->
+                            <!--<div class="padder-v">-->
+                              <!--<a href="#" class="text-ellipsis">Hook Me</a>-->
+                              <!--<a href="#" class="text-ellipsis text-xs text-muted">Gossi</a>-->
+                            <!--</div>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-6 col-sm-3">-->
+                          <!--<div class="item">-->
+                            <!--<div class="pos-rlt">-->
+                              <!--<div class="item-overlay opacity r r-2x bg-black">-->
+                                <!--<div class="center text-center m-t-n">-->
+                                  <!--<a href="#"><i class="fa fa-play-circle i-2x"></i></a>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                              <!--<a href="#"><img src="images/a5.png" alt="" class="r r-2x img-full"></a>-->
+                            <!--</div>-->
+                            <!--<div class="padder-v">-->
+                              <!--<a href="#" class="text-ellipsis">Tempered Song</a>-->
+                              <!--<a href="#" class="text-ellipsis text-xs text-muted">Miaow</a>-->
+                            <!--</div>-->
+                          <!--</div>-->
+                        <!--</div> &ndash;&gt;-->
+                      <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-5">-->
+                      <!--<h4 class="font-thin">热门作家</h4>-->
+                      <!--<div class="list-group bg-white list-group-lg no-bg auto">-->
+                        <!--<a href="#" class="list-group-item clearfix">-->
+                          <!--<span class="pull-right h2 text-muted m-l">1</span>-->
+                          <!--<span class="pull-left thumb-sm avatar m-r">-->
+                            <!--<img src="images/a4.png" alt="...">-->
+                          <!--</span>-->
+                          <!--<span class="clear">-->
+                            <!--<span>莫言</span>-->
+                            <!--<small class="text-muted clear text-ellipsis">中国作家、诺贝尔文学奖得主</small>-->
+                          <!--</span>-->
+                        <!--</a>-->
+                        <!--<a href="#" class="list-group-item clearfix">-->
+                          <!--<span class="pull-right h2 text-muted m-l">2</span>-->
+                          <!--<span class="pull-left thumb-sm avatar m-r">-->
+                            <!--<img src="images/a5.png" alt="...">-->
+                          <!--</span>-->
+                          <!--<span class="clear">-->
+                            <!--<span>Lementum ligula vitae</span>-->
+                            <!--<small class="text-muted clear text-ellipsis">by Amanda Conlan</small>-->
+                          <!--</span>-->
+                        <!--</a>-->
+                        <!--<a href="#" class="list-group-item clearfix">-->
+                          <!--<span class="pull-right h2 text-muted m-l">3</span>-->
+                          <!--<span class="pull-left thumb-sm avatar m-r">-->
+                            <!--<img src="images/a6.png" alt="...">-->
+                          <!--</span>-->
+                          <!--<span class="clear">-->
+                            <!--<span>Aliquam sollicitudin venenatis</span>-->
+                            <!--<small class="text-muted clear text-ellipsis">by Dan Doorack</small>-->
+                          <!--</span>-->
+                        <!--</a>-->
+                        <!--<a href="#" class="list-group-item clearfix">-->
+                          <!--<span class="pull-right h2 text-muted m-l">4</span>-->
+                          <!--<span class="pull-left thumb-sm avatar m-r">-->
+                            <!--<img src="images/a7.png" alt="...">-->
+                          <!--</span>-->
+                          <!--<span class="clear">-->
+                            <!--<span>Aliquam sollicitudin venenatis ipsum</span>-->
+                            <!--<small class="text-muted clear text-ellipsis">by Lauren Taylor</small>-->
+                          <!--</span>-->
+                        <!--</a>-->
+                        <!--<a href="#" class="list-group-item clearfix">-->
+                          <!--<span class="pull-right h2 text-muted m-l">5</span>-->
+                          <!--<span class="pull-left thumb-sm avatar m-r">-->
+                            <!--<img src="images/a8.png" alt="...">-->
+                          <!--</span>-->
+                          <!--<span class="clear">-->
+                            <!--<span>Vestibulum ullamcorper</span>-->
+                            <!--<small class="text-muted clear text-ellipsis">by Dan Doorack</small>-->
+                          <!--</span>-->
+                        <!--</a>-->
+                      <!--</div>-->
+                    <!--</div>-->
+                  <!--</div>-->
+                  <!--<div class="row m-t-lg m-b-lg">-->
+                    <!--<div class="col-sm-6">-->
+                      <!--<div class="bg-primary wrapper-md r">-->
+                        <!--<a href="#">-->
+                          <!--<span class="h4 m-b-xs block"><i class=" icon-user-follow i-lg"></i>注册</span>-->
+                          <!--<span class="text-muted">创建自己的账号，享受更多功能</span>-->
+                        <!--</a>-->
+                      <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-6">-->
+                      <!--<div class="bg-black wrapper-md r">-->
+                        <!--<a href="#">-->
+                          <!--<a href="/upload"><span class="h4 m-b-xs block"><i class="icon-cloud-download i-lg"></i>上传书籍</span></a>-->
+                          <!--<span class="text-muted">赶快与书友分享自己的书籍吧！</span>-->
+                        <!--</a>-->
+                      <!--</div>-->
+                    <!--</div>-->
+                  <!--</div>-->
+                <!--</section>-->
+                <!--<footer class="footer bg-dark">-->
+
+                <!--</footer>-->
+              </section>
+            </section>
+            <!-- side content -->
+              {% block chat_room %}
+            <aside class="aside-md bg-light dk" id="sidebar">
+              <section class="vbox animated fadeInRight">
+                <section class="w-f-md scrollable hover">
+                  <h4 class="font-thin m-l-md m-t">聊天室</h4>
+                  <ul class="list-group no-bg no-borders auto m-t-n-xxs">
+                    <li class="list-group-item">
+                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
+                        <img src="images/a1.png" alt="..." class="img-circle">
+                        <i class="on b-light right sm"></i>
+                      </span>
+                      <div class="clear">
+                        <div><a href="#">Chris Fox</a></div>
+                        <small class="text-muted">New York</small>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+              </section>
+            </aside>
+              {% end %}
+            <!-- / side content -->
+          </section>
+          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <!-- Bootstrap -->
+  <script src="{{static_url('js/bootstrap.js')}}"></script>
+  <!-- App -->
+  <script src="{{static_url('js/app.js')}}"></script>
+  <script src="{{static_url('js/slimscroll/jquery.slimscroll.min.js')}}"></script>
+    <script src="{{static_url('js/app.plugin.js')}}"></script>
+  <script type="text/javascript" src="{{static_url('js/jPlayer/jquery.jplayer.min.js')}}"></script>
+  <script type="text/javascript" src="{{static_url('js/jPlayer/add-on/jplayer.playlist.min.js')}}"></script>
+  <script type="text/javascript" src="{{static_url('js/jPlayer/demo.js')}}"></script>
+
+    {% block footer_js %} {% end %}
+    {% block footer_css %} {% end %}
+</body>
+</html>
