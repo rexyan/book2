@@ -18,17 +18,19 @@
                   url: '/getbook',
                   data: {'data':link.value},
                   success:function (arg) {
-                      var obj = (JSON.parse(arg))
-                      console.log(obj)
-                      if (obj['code']==false){
+                      window.obj = (JSON.parse(arg))
+                      console.log(window.obj)
+                      if (window.obj['code']==false){
                             $("#info_alert").removeClass()
                             $("#info_alert").addClass("alert alert-danger alert-dismissible");
-                            $("#alert_info").text('获取书籍信息失败：'+obj['data']);
+                            $("#alert_info").text('获取书籍信息失败：'+window.obj['data']);
                       }else{
                             $("#info_alert").removeClass()
                             $("#info_alert").addClass("alert alert-success alert-dismissible"); // 追加样式
-                            $("#alert_info").text('获取到书籍：'+obj['data']['alt_title']+'作者：'+obj['data']['author'][0]+'链接：'+obj['data']['alt']);
+                            $("#alert_info").text('获取到书籍：'+window.obj['data']['alt_title']+'作者：'+window.obj['data']['author'][0]+'链接：'+window.obj['data']['alt']);
                             $("#select_file").show()
+                            //$("#book_id").attr("value",window.obj['data']['id']);
+
                       }
                   }
                 });
@@ -60,12 +62,17 @@
               }
               $("#commit").show()
         }
+
+        function submit() {
+            alert(window.obj)
+        }
     </script>
     
 </head>
 <body>
 <div id="main">
-  <form class="form-horizontal">
+  <form class="form-horizontal" action="/up_file_to_server" method="post" enctype="multipart/form-data">
+    <input id="book_id" type="hidden"  name="book_id" value=""/>
     <fieldset>
       <div id="legend" class="">
             <div id="info_alert" class="alert alert-warning alert-dismissible" role="alert">
@@ -79,7 +86,7 @@
           <div class="controls">
             <div class="input-prepend">
               <span class="add-on">^_^</span>
-              <input class="span2" placeholder="请输入豆瓣ID" id="prependedInput" type="text" onblur="get_book_info_todouban(this)">
+              <input class="span2" placeholder="请输入豆瓣ID" name="douban_id" id="prependedInput" type="text" onblur="get_book_info_todouban(this)">
             </div>
             <p class="help-block">例如：如:27078155</p>
           </div>
@@ -88,7 +95,7 @@
           <label class="control-label">选择文件</label>
           <!-- File Upload -->
           <div class="controls">
-            <input class="input-file" id="fileInput" onchange="select_upfile(this)" type="file">
+            <input class="input-file" id="fileInput" name="up_file" onchange="select_upfile(this)" type="file">
           </div>
         </div>
 
@@ -97,7 +104,7 @@
 
           <!-- Button -->
           <div class="controls">
-            <button class="btn btn-success">确认</button>
+            <button class="btn btn-success" type="submit">确认</button>
           </div>
         </div>
 

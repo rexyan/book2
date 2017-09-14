@@ -51,3 +51,7 @@ LOCAL_TMP_PATH = ''
 
 # 豆瓣接口配置
 DOUBAN_GET_BOOK_INFO_API = 'https://api.douban.com/v2/book/'  # https://api.douban.com/v2/book/:id
+
+
+# 允许上传类型
+UP_FILE_TYPE = [u'mobi', u'pdf', u'text/plain', u'equb']

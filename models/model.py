@@ -16,6 +16,12 @@ class BaseDoc(object):
         d.pop('_id')
         return ObjectDict(d)
 
+    def to_json(self):
+        d = json.loads(self.to_json())
+        d['id'] = self.oid
+        d.pop('_id')
+        return d
+
     def __unicode__(self):
         try:
             return self.name
@@ -65,3 +71,6 @@ class User(models.Document, BaseDoc):
     down_remain = models.IntField(default=100)  # 下载剩余次数
     push_remain = models.IntField(default=100)  # 下载剩余次数
 
+
+class BookCache(models.Document, BaseDoc):  # 从豆瓣获取书籍信息后，将此书信息保存
+    content = models.DictField(max_length=8000)  # json内容

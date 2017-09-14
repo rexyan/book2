@@ -15,11 +15,14 @@ class BaseHandler(tornado.web.RequestHandler, SessionMixin):
             #self._user = auth_utils.get_user(user_id).to_dict()
         return self._user
 
-    def write_json(self, data, status=200, code=0):
+    def write_json(self, data, status=200, code=0, type=True):
         ''''''
         self.set_status(status)
         data = {
             'code': code,
             'data': data
         }
-        self.write(json.dumps(data, indent=2, cls=MyEncoder))
+        if type:
+            self.write(json.dumps(data, indent=2, cls=MyEncoder))
+        else:
+            self.write(data)
