@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from qiniu import http
+from  common.qiniu import http
 import json
 
-from qiniu.compat import is_py2
-from qiniu.compat import is_py3
+from  common.qiniu.compat import is_py2
+from  common.qiniu.compat import is_py3
 
 import hashlib
 

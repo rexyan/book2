@@ -4,7 +4,7 @@ import platform
 import requests
 from requests.auth import AuthBase
 
-from qiniu import config
+from common.qiniu import config
 import qiniu.auth
 from . import __version__
 

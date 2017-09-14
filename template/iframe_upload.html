@@ -29,7 +29,7 @@
                             $("#info_alert").addClass("alert alert-success alert-dismissible"); // 追加样式
                             $("#alert_info").text('获取到书籍：'+window.obj['data']['alt_title']+'作者：'+window.obj['data']['author'][0]+'链接：'+window.obj['data']['alt']);
                             $("#select_file").show()
-                            //$("#book_id").attr("value",window.obj['data']['id']);
+                            $("#book_id").attr("value",window.obj['data']['id']);
 
                       }
                   }
@@ -63,15 +63,34 @@
               $("#commit").show()
         }
 
-        function submit() {
-            alert(window.obj)
+        function UploadFile(){
+            var fileObj = $("#up_file")[0].files[0];  //获取文件对象
+            var form = new FormData();       //创建form对象
+            form.append("up_file", fileObj);     //在新建的form对象中加入获取到的文件对象
+
+            $.ajax({
+                type:'POST',
+                url: '/up_file_to_server/'+$("#book_id").val(),
+                data: form,
+                processData: false,  // tell jQuery not to process the data  必须加上
+                contentType: false,  // tell jQuery not to set contentType   必须加上
+                success: function(arg){
+                    var upobj = (JSON.parse(arg))
+                    if (upobj['code']){
+                        layer.alert('上传成功', {icon: 6});
+                    }else{
+                        layer.alert('上传失败', {icon: 5});
+                    }
+                }
+            })
         }
     </script>
     
 </head>
 <body>
 <div id="main">
-  <form class="form-horizontal" action="/up_file_to_server" method="post" enctype="multipart/form-data">
+  <form class="form-horizontal">
+  <!--<form class="form-horizontal" action="/up_file_to_server" method="post" enctype="multipart/form-data">-->
     <input id="book_id" type="hidden"  name="book_id" value=""/>
     <fieldset>
       <div id="legend" class="">
@@ -86,7 +105,7 @@
           <div class="controls">
             <div class="input-prepend">
               <span class="add-on">^_^</span>
-              <input class="span2" placeholder="请输入豆瓣ID" name="douban_id" id="prependedInput" type="text" onblur="get_book_info_todouban(this)">
+              <input class="span2" placeholder="请输入豆瓣ID" name="douban_id" id="douban_id" type="text" onblur="get_book_info_todouban(this)">
             </div>
             <p class="help-block">例如：如:27078155</p>
           </div>
@@ -95,7 +114,7 @@
           <label class="control-label">选择文件</label>
           <!-- File Upload -->
           <div class="controls">
-            <input class="input-file" id="fileInput" name="up_file" onchange="select_upfile(this)" type="file">
+            <input class="input-file" id="up_file" name="up_file" onchange="select_upfile(this)" type="file">
           </div>
         </div>
 
@@ -104,7 +123,7 @@
 
           <!-- Button -->
           <div class="controls">
-            <button class="btn btn-success" type="submit">确认</button>
+            <button class="btn btn-success" type="submit" onclick="UploadFile()">确认</button>
           </div>
         </div>
 

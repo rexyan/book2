@@ -9,5 +9,5 @@ url = [
         (r"/register", RegisterHandler),
         (r"/iframe_upload", IFrameHandler),
         (r"/getbook", GetbookHandler),
-        (r"/up_file_to_server", UpFileToServerHandler),
+        (r"/up_file_to_server/(?P<book_id>\w*)", UpFileToServerHandler),
       ]

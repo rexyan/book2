@@ -3,7 +3,7 @@
 
 import argparse
 
-from qiniu import etag
+from common.qiniu import etag
 
 
 def main():

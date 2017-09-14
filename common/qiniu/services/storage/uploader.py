@@ -3,9 +3,9 @@
 import os
 import time
 
-from qiniu import config
-from qiniu.utils import urlsafe_base64_encode, crc32, file_crc32, _file_iter
-from qiniu import http
+from common.qiniu import config
+from  common.qiniu.utils import urlsafe_base64_encode, crc32, file_crc32, _file_iter
+from  common.qiniu import http
 from .upload_progress_recorder import UploadProgressRecorder
 
 

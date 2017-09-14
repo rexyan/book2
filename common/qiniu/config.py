@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from qiniu import zone
+import zone
 
 RS_HOST = 'http://rs.qbox.me'      # 管理操作Host
 RSF_HOST = 'http://rsf.qbox.me'    # 列举操作Host

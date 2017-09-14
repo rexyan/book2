@@ -97,17 +97,76 @@ class GetbookHandler(BaseHandler):
 
 
 class UpFileToServerHandler(BaseHandler):
-    def post(self, *args, **kwargs):
-        douban_id = self.get_body_arguments('douban_id', None)
+    def post(self, book_id):
+        from common import up_qiniu
+        douban_id = book_id
+        #up_file = self.request.files["up_file"]
         up_file = self.request.files["up_file"]
+        tmp_path = None
         if douban_id and up_file:
-            # 将本地保存到本地
+        # 将本地保存到本地
             for meta in up_file:
-                if meta['content_type'] in settings.UP_FILE_TYPE:
-                    filename = meta['filename'].split('.')
+                filename = unicode(int(time.time()))+'.'+meta['filename'].split('.')[-1::][0]
+                if meta['filename'].split('.')[-1::][0] in settings.UP_FILE_TYPE:
                     tmp_path = os.path.join(os.path.join(os.getcwd()), 'tmp_file', 'upload_file')
                     file_path = os.path.join(tmp_path, filename)
                     with open(file_path, 'wb') as up:
                         up.write(meta['body'])
+                    up_server_status = True
+                    up_server_msg = u'文件上传成功'
+        # 文件上传七牛云
+            up_qiniu_get_file_key = None
+            ret, info = up_qiniu.upload_file_to_qiniu(os.path.join(tmp_path, filename), filename)
+            if json.loads(info.text_body).get('key') and json.loads(info.text_body).get('hash'):
+                up_qiniu = True
+                up_qiniu_msg = u'文件存储成功，新文件名为：'+filename
+                up_qiniu_get_file_key = json.loads(info.text_body).get('key')
+        # 根据ID获取书籍信息
+        book_info = None
+        cache_obj = BookCache.objects.all()
+        for x in cache_obj:
+            if x['content']['id'] == douban_id:
+                book_info= x.to_dict()
 
-        self.write_json('11111')
+        # 保存作者信息
+        is_save = True
+        book_obj = Author.objects.all()
+        for x in book_obj:
+            if x['name'] == book_info['content']['author'][0]:
+                is_save = False
+                author_id = x.oid
+                break
+        if is_save:
+            author_obj = Author(
+                name = book_info['content']['author'][0],
+                introduction = book_info['content']['author_intro']
+            )
+            author_obj.save()
+        else:
+            author_obj = Author.objects.get(id = author_id)
+
+        # 保存书籍信息
+        book_obj = Book(
+            name= book_info['content']['alt_title'], # 书名
+            author_id = author_obj.oid,  # 作者ID
+            subtitle = book_info['content']['subtitle'], # 副标题
+            publication = book_info['content']['pubdate'],  # 出版时间
+            isdb = book_info['content']['isbn13'],  # ISBN
+            introduction = book_info['content']['summary'],  # 简介
+            down_key = up_qiniu_get_file_key,  # 七牛key
+            img_link = book_info['content']['images']['large'],  # 豆瓣图片链接
+            douban_link = book_info['content']['alt'],  # 豆瓣链接
+            score = book_info['content']['rating']['average'],  # 豆瓣评分
+            integral = float(book_info['content']['price'])/10,  # 书籍积分
+        )
+        book_obj.save()
+        db_save = True
+        db_save_msg = u'书籍信息保存成功'
+        if db_save and up_qiniu and up_server_status:
+            status = True
+        else:
+            status = False
+
+        # 删除本地文件
+        os.remove(os.path.join(tmp_path, filename))
+        self.write_json(code=status, data=[up_server_msg,up_qiniu_msg,db_save_msg])

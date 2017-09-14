@@ -3,8 +3,8 @@
 import os
 import time
 import requests
-from qiniu import compat
-from qiniu import utils
+import compat
+import utils
 
 UC_HOST = 'https://uc.qbox.me'  # 获取空间信息Host
 
