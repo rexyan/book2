@@ -60,7 +60,7 @@ class Push(models.Document, BaseDoc):
     book_id = models.IntField(max_length=20)  # BookID
 
 
-class Thumbs(models.Document, BaseDoc):
+class Collection(models.Document, BaseDoc):   # 收藏表
     user_id = models.IntField(max_length=20)  # 书籍ID
     book_id = models.IntField(max_length=20)  # BookID
 
@@ -77,3 +77,11 @@ class User(models.Document, BaseDoc):
 
 class BookCache(models.Document, BaseDoc):  # 从豆瓣获取书籍信息后，将此书信息保存
     content = models.DictField(max_length=8000)  # json内容
+
+
+class File_Map(models.Document, BaseDoc):
+    user_id = models.StringField(max_length=100) # 上传用户ID
+    book_id = models.StringField(max_length=100) # 书籍ID
+    qiniu_link =  models.StringField(max_length=100) # 七牛链接
+    up_time = models.DateTimeField(default=datetime.datetime.now)  # 上传时间
+    recommend_count = models.IntField(default=0)  # 推荐次数

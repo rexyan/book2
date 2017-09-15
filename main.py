@@ -9,7 +9,7 @@ from tornado.netutil import bind_sockets
 from tornado.httpserver import HTTPServer
 
 
-log = getLogger('run.py')
+log = getLogger('main.py')
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:

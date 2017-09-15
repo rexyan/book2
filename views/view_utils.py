@@ -5,4 +5,4 @@ from bson import ObjectId
 
 
 def get_hot_book():
-    return Book.objects.all()
+    return BookCache.objects.all()

@@ -198,30 +198,30 @@ class UpFileToServerHandler(BaseHandler):
             author_obj = Author.objects.get(id=author_id)
 
         # 保存书籍信息
-        book_obj = Book(
-            name=book_info['content']['alt_title'],  # 书名
-            author_id=author_obj.oid,  # 作者ID
-            subtitle=book_info['content']['subtitle'],  # 副标题
-            publication=book_info['content']['pubdate'],  # 出版时间
-            isdb=book_info['content']['isbn13'],  # ISBN
-            introduction=book_info['content']['summary'],  # 简介
-            down_key=up_qiniu_get_file_key,  # 七牛key
-            img_link=book_info['content']['images']['large'],  # 豆瓣图片链接
-            douban_link=book_info['content']['alt'],  # 豆瓣链接
-            score=book_info['content']['rating']['average'],  # 豆瓣评分
-            integral=int(book_info['content']['pages'])/100,  # 书籍积分
-        )
-        book_obj.save()
-        db_save = True
-        db_save_msg = u'书籍信息保存成功'
-        if db_save and up_qiniu and up_server_status:
+        # book_obj = Book(
+        #     name=book_info['content']['alt_title'],  # 书名
+        #     author_id=author_obj.oid,  # 作者ID
+        #     subtitle=book_info['content']['subtitle'],  # 副标题
+        #     publication=book_info['content']['pubdate'],  # 出版时间
+        #     isdb=book_info['content']['isbn13'],  # ISBN
+        #     introduction=book_info['content']['summary'],  # 简介
+        #     down_key=up_qiniu_get_file_key,  # 七牛key
+        #     img_link=book_info['content']['images']['large'],  # 豆瓣图片链接
+        #     douban_link=book_info['content']['alt'],  # 豆瓣链接
+        #     score=book_info['content']['rating']['average'],  # 豆瓣评分
+        #     integral=int(book_info['content']['pages'])/100,  # 书籍积分
+        # )
+        # book_obj.save()
+        # db_save = True
+        # db_save_msg = u'书籍信息保存成功'
+        if  up_qiniu and up_server_status:
             status = True
         else:
             status = False
 
         # 删除本地文件
         os.remove(os.path.join(tmp_path, filename))
-        self.write_json(code=status, data=[up_server_msg, up_qiniu_msg, db_save_msg])
+        self.write_json(code=status, data=[up_server_msg, up_qiniu_msg])
 
 
 class CheckCodeHandler(BaseHandler):
@@ -251,3 +251,11 @@ class ActivaHandler(BaseHandler):
             data = u'param_error'
         self.redirect("/login?user_active="+str(status))
         #self.write_json(code=status, data=data)
+
+
+class SelectVersionHandler(BaseHandler):
+    def get(self):
+        self.render('select_version.html')
+
+    def post(self):
+        pass

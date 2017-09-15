@@ -22,161 +22,148 @@ layer.open({
   }
 });
 
+function down_book(arg) {
+    layer.open({
+            type: 2,
+            title: '版本选择',
+            shadeClose: true,
+            shade: false,
+            maxmin: true,
+            area: ['800px;', '580px;'],
+            content: '/select_version?book_id='+arg.tag //iframe的url
+    });
+}
 </script>
 {% end %}
 
 {% block body %}
-                <section class="scrollable padder-lg w-f-md" id="bjax-target">
-                  <a href="#" class="pull-right text-muted m-t-lg" data-toggle="class:fa-spin" ><i class="icon-refresh i-lg  inline"  id="refresh"></i></a>
-                  <h4 class="font-thin m-b">热门书籍 <span class="musicbar animate inline m-l-sm" style="width:20px;height:20px">
-                    <span class="bar1 a1 bg-primary lter"></span>
-                    <span class="bar2 a2 bg-info lt"></span>
-                    <span class="bar3 a3 bg-success"></span>
-                    <span class="bar4 a4 bg-warning dk"></span>
-                    <span class="bar5 a5 bg-danger dker"></span>
-                  </span></h4>
-                  <div class="row row-sm">
-                    {% for x in book %}
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                      <div class="item">
-                        <div class="pos-rlt">
-                        <div class="top">
-                            <span class="pull-right m-t-sm m-r-sm badge bg-info">6</span>
-                          </div>
-                          <div class="bottom">
-                            <span class="badge bg-info m-l-sm m-b-sm">1000</span>
+  <section class="scrollable padder-lg w-f-md" id="bjax-target">
+    <a href="#" class="pull-right text-muted m-t-lg" data-toggle="class:fa-spin" ><i class="icon-refresh i-lg  inline"  id="refresh"></i></a>
+    <h4 class="font-thin m-b">热门书籍 <span class="musicbar animate inline m-l-sm" style="width:20px;height:20px">
+      <span class="bar1 a1 bg-primary lter"></span>
+      <span class="bar2 a2 bg-info lt"></span>
+      <span class="bar3 a3 bg-success"></span>
+      <span class="bar4 a4 bg-warning dk"></span>
+      <span class="bar5 a5 bg-danger dker"></span>
+    </span></h4>
+    <div class="doc-buttons">
+      <a href="#" class="btn btn-s-md btn-default">最新上传</a>
+      <a href="#" class="btn btn-s-md btn-primary">下载排行</a>
+      <a href="#" class="btn btn-s-md btn-success">推送排行</a>
+      <a href="#" class="btn btn-s-md btn-info">点赞排行</a>
 
-                          </div>
-                          <div class="item-overlay opacity r r-2x bg-black">
-                            <div class="text-info padder m-t-sm text-sm">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star-o text-muted"></i>
-                            </div>
-                             <div class="center text-center m-t-n">
-                              <a href="#"><i class="icon-cloud-download i-3x"></i></a>
-                            </div>
-                            <!-- <div class="center text-center m-t-n">
-                              <a href="#"><i class="icon-control-down i-2x"></i></a>
-                            </div> -->
-                            <div class="bottom padder m-b-sm">
-                               <a href="#" class="pull-right active" data-toggle="class">
-                                <i class="fa fa-heart-o text"></i>
-                                <i class="fa fa-heart text-active text-danger"></i>
-                              </a>
-                              <a href="#" class="" data-toggle="class">
-                                <i class="fa fa-plus-circle text"></i>
-                                <i class="fa fa-check-circle text-active text-info"></i>
-                              </a>
-                            </div>
-                          </div>
-                          <a href="#"><img src='{{ x.img_link }}' alt="" class="r r-2x img-full"></a>
-                        </div>
-                        <div class="padder-v">
-                          <a href="#" class="text-ellipsis"><strong>{{ x.name }}</strong></a>
-                          <a href="#" class="text-ellipsis text-xs text-muted">{{ x.name }}</a>
-                        </div>
-                      </div>
-                    </div>
-                    {% end %}
+    </div>
+    <div class="doc-buttons">
+       <a href="#" class="btn btn-s-md btn-warning">评分排行</a>
+      <a href="#" class="btn btn-s-md btn-danger">评论排行</a>
+      <a href="#" class="btn btn-s-md btn-dark">随机显示</a>
+      <a href="#" class="btn btn-s-md btn-default disabled">其他说明</a>
+    </div>
+
+    <br>
+    <div class="row row-sm">
+      {% for x in book %}
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="item">
+          <div class="pos-rlt">
+          <div class="top">
+              <span class="pull-right m-t-sm m-r-sm badge bg-info">{{ x.content['rating']['average'] }} </span>
+            </div>
+            <div class="bottom">
+              <span class="badge bg-info m-l-sm m-b-sm">1000</span>
+
+            </div>
+            <div class="item-overlay opacity r r-2x bg-black">
+              <div class="text-info padder m-t-sm text-sm">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o text-muted"></i>
+              </div>
+               <div class="center text-center m-t-n">
+                <i  style="cursor:pointer" onclick='down_book(this)' tag="{{ x.content['id'] }}" class="icon-cloud-download i-3x"></i>
+              </div>
+              <!-- <div class="center text-center m-t-n">
+                <a href="#"><i class="icon-control-down i-2x"></i></a>
+              </div> -->
+              <div class="bottom padder m-b-sm">
+                 <a href="#" class="pull-right active" data-toggle="class">
+                  <i class="fa fa-heart-o text"></i>
+                  <i class="fa fa-heart text-active text-danger"></i>
+                </a>
+                <a href="#" class="" data-toggle="class">
+                  <i style="cursor:pointer" onclick='down_book(this)' tag="{{ x.content['id'] }}"  class="fa fa-plus-square text"></i>
+                </a>
+              </div>
+            </div>
+            <a href="#"><img style="height: 270px;" src='{{ x.content["images"]["large"] }}' alt="" class="r r-2x img-full"></a>
+          </div>
+          <div class="padder-v">
+            <a href="#" class="text-ellipsis"><strong>{{ x.content['title'] }}</strong></a>
+            <a href="#" class="text-ellipsis text-xs text-muted">{{ x.content['author'][0] }}</a>
+          </div>
+        </div>
+      </div>
+      {% end %}
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+        <h4 class="font-thin">热门词云</h4>
+        <div class="row row-sm">
+          <div class="col-xs-6 col-sm-3">
+            <div class="item">
+              <div class="pos-rlt">
+                <div class="">
+                  <div class="center text-center m-t-n">
+                    <a href="#"><i class=""></i></a>
                   </div>
-                  <div class="row">
-                    <div class="col-md-7">
-                      <h3 class="font-thin">热门类型</h3>
-                      <div class="row row-sm">
-                        <div class="col-xs-6 col-sm-3">
-                          <div class="item">
-                            <div class="pos-rlt">
-                              <div class="">
-                                <div class="center text-center m-t-n">
-                                  <a href="#"><i class=""></i></a>
-                                </div>
-                              </div>
-                              <a href="#"><img src="{{static_url('images/a2.png')}}" alt="" class="r r-2x img-full"></a>
-                            </div>
-                            <div class="padder-v">
-                              <a href="#" class="text-ellipsis">文学</a>
-                              <a href="#" class="text-ellipsis text-xs text-muted">小说、散文、戏剧</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <h4 class="font-thin">热门作家</h4>
-                      <div class="list-group bg-white list-group-lg no-bg auto">                          
-                        <a href="#" class="list-group-item clearfix">
-                          <span class="pull-right h2 text-muted m-l">1</span>
-                          <span class="pull-left thumb-sm avatar m-r">
-                            <img src="images/a4.png" alt="...">
-                          </span>
-                          <span class="clear">
-                            <span>莫言</span>
-                            <small class="text-muted clear text-ellipsis">中国作家、诺贝尔文学奖得主</small>
-                          </span>
-                        </a>
-                        <a href="#" class="list-group-item clearfix">
-                          <span class="pull-right h2 text-muted m-l">2</span>
-                          <span class="pull-left thumb-sm avatar m-r">
-                            <img src="images/a5.png" alt="...">
-                          </span>
-                          <span class="clear">
-                            <span>Lementum ligula vitae</span>
-                            <small class="text-muted clear text-ellipsis">by Amanda Conlan</small>
-                          </span>
-                        </a>
-                        <a href="#" class="list-group-item clearfix">
-                          <span class="pull-right h2 text-muted m-l">3</span>
-                          <span class="pull-left thumb-sm avatar m-r">
-                            <img src="images/a6.png" alt="...">
-                          </span>
-                          <span class="clear">
-                            <span>Aliquam sollicitudin venenatis</span>
-                            <small class="text-muted clear text-ellipsis">by Dan Doorack</small>
-                          </span>
-                        </a>
-                        <a href="#" class="list-group-item clearfix">
-                          <span class="pull-right h2 text-muted m-l">4</span>
-                          <span class="pull-left thumb-sm avatar m-r">
-                            <img src="images/a7.png" alt="...">
-                          </span>
-                          <span class="clear">
-                            <span>Aliquam sollicitudin venenatis ipsum</span>
-                            <small class="text-muted clear text-ellipsis">by Lauren Taylor</small>
-                          </span>
-                        </a>
-                        <a href="#" class="list-group-item clearfix">
-                          <span class="pull-right h2 text-muted m-l">5</span>
-                          <span class="pull-left thumb-sm avatar m-r">
-                            <img src="images/a8.png" alt="...">
-                          </span>
-                          <span class="clear">
-                            <span>Vestibulum ullamcorper</span>
-                            <small class="text-muted clear text-ellipsis">by Dan Doorack</small>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row m-t-lg m-b-lg">
-                    <div class="col-sm-6">
-                      <div class="bg-primary wrapper-md r">
-                        <a href="/login">
-                          <span class="h4 m-b-xs block"><i class=" icon-user-follow i-lg"></i>登录</span>
-                          <span class="text-muted">创建自己的账号，享受更多功能</span>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="bg-black wrapper-md r">
-                        <a href="#">
-                          <a href="/upload"><span class="h4 m-b-xs block"><i class="icon-cloud-download i-lg"></i>上传书籍</span></a>
-                          <span class="text-muted">赶快与书友分享自己的书籍吧！</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
+                </div>
+                <a href="#"><img src="{{static_url('images/a2.png')}}" alt="" class="r r-2x img-full"></a>
+              </div>
+              <div class="padder-v">
+                <a href="#" class="text-ellipsis">文学</a>
+                <a href="#" class="text-ellipsis text-xs text-muted">小说、散文、戏剧</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h4 class="font-thin">热门作家</h4>
+        <div class="list-group bg-white list-group-lg no-bg auto">
+          {% for x in book %}
+          <a href="#" class="list-group-item clearfix">
+            <span class="pull-right h2 text-muted m-l">1</span>
+            <span class="pull-left thumb-sm avatar m-r">
+              <img src="{{ x.content['images']['small'] }}" alt="...">
+            </span>
+            <span class="clear">
+              <span>{{ x.content['author'][0] }}</span>
+              <small class="text-muted clear text-ellipsis">{{ x.content['author_intro'] }}</small>
+            </span>
+          </a>
+          {% end %}
+        </div>
+      </div>
+    </div>
+    <div class="row m-t-lg m-b-lg">
+      <div class="col-sm-6">
+        <div class="bg-primary wrapper-md r">
+          <a href="/login">
+            <span class="h4 m-b-xs block"><i class=" icon-user-follow i-lg"></i>登录</span>
+            <span class="text-muted">创建自己的账号，享受更多功能</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="bg-black wrapper-md r">
+          <a href="#">
+            <a href="/upload"><span class="h4 m-b-xs block"><i class="icon-cloud-download i-lg"></i>上传书籍</span></a>
+            <span class="text-muted">赶快与书友分享自己的书籍吧！</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 {% end %}
