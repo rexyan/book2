@@ -12,6 +12,7 @@ MEMCACHE_EXPIRE_TIME = 120
 REDIS_HOST = '127.0.0.1'
 REDIS_PORT = 6379
 REDIS_DB = 1
+DOMAIN_NAME = 'http://127.0.0.1:3344'
 
 
 def connect_db(db_name=MONGODB_DBNAME):
@@ -28,6 +29,7 @@ project_setting = dict(
     template_path='template',
     static_path='static',
     static_url_prefix='/static/',
+    cookie_secret='2379874hsdhf0234990sdhsaiuofyasop977djdj'
 )
 
 # SESSION插件配置
@@ -55,3 +57,9 @@ DOUBAN_GET_BOOK_INFO_API = 'https://api.douban.com/v2/book/'  # https://api.doub
 
 # 允许上传类型
 UP_FILE_TYPE = [u'mobi', u'pdf', u'txt', u'equb']
+
+# SMTP 账号设置
+SMTP_ADD = 'smtp.exmail.qq.com'
+SMTP_PORT = 25
+SMTP_USER = 'push@kindle15.com'
+SMTP_PASS = '18525350524Yrs'

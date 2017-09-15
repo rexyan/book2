@@ -1,4 +1,6 @@
 # encoding=utf8
+# 使用： python restart_port.py all 9060 2
+
 
 import sys
 import commands

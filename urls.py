@@ -10,4 +10,7 @@ url = [
         (r"/iframe_upload", IFrameHandler),
         (r"/getbook", GetbookHandler),
         (r"/up_file_to_server/(?P<book_id>\w*)", UpFileToServerHandler),
+        (r"/up_file_to_server/(?P<book_id>\w*)", UpFileToServerHandler),
+        (r"/get_check_code", CheckCodeHandler),
+        (r"/activation/(\w*)", ActivaHandler),
       ]

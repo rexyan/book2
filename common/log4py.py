@@ -1,4 +1,4 @@
-#encoding:utf-8
+# --coding:utf-8--
 
 """
 
@@ -366,7 +366,7 @@ class Logger:
     def __Logger_tracestack(self):
         """ **(private)** Analyze traceback stack and set linenumber and functionname. """
         stack = traceback.extract_stack()
-        self.__Logger_module = stack[-4][0].replace('\\','/')  #re.subµÄbug, sub('%f','\\g','asdfasf')»á±¨´í¡°bad group name¡±£¬Òò´Ë½«'\\'Ìæ»»³É'/'
+        self.__Logger_module = stack[-4][0].replace('\\','/')  #re.subï¿½ï¿½bug, sub('%f','\\g','asdfasf')ï¿½á±¨ï¿½ï¿½bad group nameï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë½ï¿½'\\'ï¿½æ»»ï¿½ï¿½'/'
         self.__Logger_linenumber = stack[-4][1]
         self.__Logger_functionname = stack[-4][2]
         self.__Logger_filename = stack[-4][0].replace('\\','/')  

@@ -3,6 +3,7 @@
 import mongoengine as models
 import json
 from tornado.util import ObjectDict
+import datetime
 
 
 class BaseDoc(object):
@@ -41,6 +42,7 @@ class Book(models.Document, BaseDoc):
     douban_link = models.StringField(max_length=200)  # 豆瓣链接
     score = models.FloatField(default=0)  # 豆瓣评分
     integral = models.FloatField(default=0)  # 书籍积分
+    up_time = models.DateTimeField(default=datetime.datetime.now)
 
 
 class Author(models.Document, BaseDoc):
@@ -66,6 +68,7 @@ class Thumbs(models.Document, BaseDoc):
 class User(models.Document, BaseDoc):
     name = models.StringField(max_length=100)  # 用户名称
     mail = models.StringField(max_length=30)  # 用户邮箱
+    key = models.StringField(max_length=40)  # 用户唯一key
     password = models.StringField(max_length=40)  # 用户密码
     status = models.BooleanField(default=False)  # 用户状态
     down_remain = models.IntField(default=100)  # 下载剩余次数

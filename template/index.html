@@ -1,5 +1,30 @@
 {% extends 'base.html' %}
 
+{% block js %}
+<script>
+layer.open({
+  type: 1
+  ,offset: 'rb' //具体配置参考：offset参数项
+  ,content: '<div style="padding: 20px 80px;">是否打开聊天室</div>'
+  ,btn: '打开'
+  ,btnAlign: 'c' //按钮居中
+  ,shade: 0 //不显示遮罩
+  ,yes: function(){
+          layer.open({
+              type: 2,
+              title: '聊天室',
+              shadeClose: true,
+              shade: false,
+              maxmin: true,
+              area: ['800px;', '580px;'],
+              content: 'http://127.0.0.1:3456/meg_api' //iframe的url
+          });
+  }
+});
+
+</script>
+{% end %}
+
 {% block body %}
                 <section class="scrollable padder-lg w-f-md" id="bjax-target">
                   <a href="#" class="pull-right text-muted m-t-lg" data-toggle="class:fa-spin" ><i class="icon-refresh i-lg  inline"  id="refresh"></i></a>
@@ -47,7 +72,6 @@
                               </a>
                             </div>
                           </div>
-
                           <a href="#"><img src='{{ x.img_link }}' alt="" class="r r-2x img-full"></a>
                         </div>
                         <div class="padder-v">
@@ -57,337 +81,6 @@
                       </div>
                     </div>
                     {% end %}
-                    <!--<div class="clearfix visible-xs"></div>-->
-                    <!--<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">-->
-                      <!--<div class="item">-->
-                        <!--<div class="pos-rlt">-->
-                          <!--<div class="item-overlay opacity r r-2x bg-black">-->
-                            <!--<div class="text-info padder m-t-sm text-sm">-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star-o text-muted"></i>-->
-                            <!--</div>-->
-                            <!--<div class="center text-center m-t-n">-->
-                              <!--<a href="#"><i class="icon-control-play i-2x"></i></a>-->
-                            <!--</div>-->
-                            <!--<div class="bottom padder m-b-sm">-->
-                              <!--<a href="#" class="pull-right">-->
-                                <!--<i class="fa fa-heart-o"></i>-->
-                              <!--</a>-->
-                              <!--<a href="#">-->
-                                <!--<i class="fa fa-plus-circle"></i>-->
-                              <!--</a>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                          <!--<a href="#"><img src="{{static_url('images/p3.jpg')}}" alt="" class="r r-2x img-full"></a>-->
-                        <!--</div>-->
-                        <!--<div class="padder-v">-->
-                          <!--<a href="#" class="text-ellipsis">Morbi id neque quam liquam sollicitudin</a>-->
-                          <!--<a href="#" class="text-ellipsis text-xs text-muted">Allen JH</a>-->
-                        <!--</div>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">-->
-                      <!--<div class="item">-->
-                        <!--<div class="pos-rlt">-->
-                          <!--<div class="item-overlay opacity r r-2x bg-black">-->
-                            <!--<div class="text-info padder m-t-sm text-sm">-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star-o text-muted"></i>-->
-                            <!--</div>-->
-                            <!--<div class="center text-center m-t-n">-->
-                              <!--<a href="#"><i class="icon-control-play i-2x"></i></a>-->
-                            <!--</div>-->
-                            <!--<div class="bottom padder m-b-sm">-->
-                              <!--<a href="#" class="pull-right">-->
-                                <!--<i class="fa fa-heart-o"></i>-->
-                              <!--</a>-->
-                              <!--<a href="#">-->
-                                <!--<i class="fa fa-plus-circle"></i>-->
-                              <!--</a>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                          <!--<div class="top">-->
-                            <!--<span class="pull-right m-t-n-xs m-r-sm text-white">-->
-                              <!--<i class="fa fa-bookmark i-lg"></i>-->
-                            <!--</span>-->
-                          <!--</div>-->
-                          <!--<a href="#"><img src="{{static_url('images/p4.jpg')}}" alt="" class="r r-2x img-full"></a>-->
-                        <!--</div>-->
-                        <!--<div class="padder-v">-->
-                          <!--<a href="#" class="text-ellipsis">Tincidunt libero</a>-->
-                          <!--<a href="#" class="text-ellipsis text-xs text-muted">Amanda Conlan</a>-->
-                        <!--</div>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="clearfix visible-xs"></div>-->
-                    <!--<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">-->
-                      <!--<div class="item">-->
-                        <!--<div class="pos-rlt">-->
-                          <!--<div class="item-overlay opacity r r-2x bg-black">-->
-                            <!--<div class="text-info padder m-t-sm text-sm">-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star-o text-muted"></i>-->
-                            <!--</div>-->
-                            <!--<div class="center text-center m-t-n">-->
-                              <!--<a href="#"><i class="icon-control-play i-2x"></i></a>-->
-                            <!--</div>-->
-                            <!--<div class="bottom padder m-b-sm">-->
-                              <!--<a href="#" class="pull-right">-->
-                                <!--<i class="fa fa-heart-o"></i>-->
-                              <!--</a>-->
-                              <!--<a href="#">-->
-                                <!--<i class="fa fa-plus-circle"></i>-->
-                              <!--</a>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                          <!--<a href="#"><img src="{{static_url('images/p5.jpg')}}" alt="" class="r r-2x img-full"></a>-->
-                        <!--</div>-->
-                        <!--<div class="padder-v">-->
-                          <!--<a href="#" class="text-ellipsis">Fermentum diam</a>-->
-                          <!--<a href="#" class="text-ellipsis text-xs text-muted">Nisa Colen</a>-->
-                        <!--</div>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">-->
-                      <!--<div class="item">-->
-                        <!--<div class="pos-rlt">-->
-                          <!--<div class="top">-->
-                            <!--<span class="pull-right m-t-sm m-r-sm badge bg-info">6</span>-->
-                          <!--</div>-->
-                          <!--<div class="item-overlay opacity r r-2x bg-black">-->
-                            <!--<div class="text-info padder m-t-sm text-sm">-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star-o text-muted"></i>-->
-                            <!--</div>-->
-                            <!--<div class="center text-center m-t-n">-->
-                              <!--<a href="#"><i class="icon-control-play i-2x"></i></a>-->
-                            <!--</div>-->
-                            <!--<div class="bottom padder m-b-sm">-->
-                              <!--<a href="#" class="pull-right">-->
-                                <!--<i class="fa fa-heart-o"></i>-->
-                              <!--</a>-->
-                              <!--<a href="#">-->
-                                <!--<i class="fa fa-plus-circle"></i>-->
-                              <!--</a>-->
-                            <!--</div>-->
-                          <!--</div>                          -->
-                          <!--<a href="#"><img src="{{static_url('images/p6.jpg')}}" alt="" class="r r-2x img-full"></a>-->
-                        <!--</div>-->
-                        <!--<div class="padder-v">-->
-                          <!--<a href="#" class="text-ellipsis">Habitant</a>-->
-                          <!--<a href="#" class="text-ellipsis text-xs text-muted">Dan Doorack</a>-->
-                        <!--</div>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="clearfix visible-xs"></div>-->
-                    <!--<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">-->
-                      <!--<div class="item">-->
-                        <!--<div class="pos-rlt">-->
-                          <!--<div class="item-overlay opacity r r-2x bg-black">-->
-                            <!--<div class="text-info padder m-t-sm text-sm">-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star-o text-muted"></i>-->
-                            <!--</div>-->
-                            <!--<div class="center text-center m-t-n">-->
-                              <!--<a href="#"><i class="icon-control-play i-2x"></i></a>-->
-                            <!--</div>-->
-                            <!--<div class="bottom padder m-b-sm">-->
-                              <!--<a href="#" class="pull-right">-->
-                                <!--<i class="fa fa-heart-o"></i>-->
-                              <!--</a>-->
-                              <!--<a href="#">-->
-                                <!--<i class="fa fa-plus-circle"></i>-->
-                              <!--</a>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                          <!--<div class="top">-->
-                            <!--<span class="pull-right m-t-sm m-r-sm badge bg-white">12</span>-->
-                          <!--</div>-->
-                          <!--<a href="#"><img src="{{static_url('images/p7.jpg')}}" alt="" class="r r-2x img-full"></a>-->
-                        <!--</div>-->
-                        <!--<div class="padder-v">-->
-                          <!--<a href="#" class="text-ellipsis">Vivamus vel tincidunt libero</a>-->
-                          <!--<a href="#" class="text-ellipsis text-xs text-muted">Ligula H</a>-->
-                        <!--</div>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">-->
-                      <!--<div class="item">-->
-                        <!--<div class="pos-rlt">-->
-                          <!--<div class="item-overlay opacity r r-2x bg-black">-->
-                            <!--<div class="text-info padder m-t-sm text-sm">-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star-o text-muted"></i>-->
-                            <!--</div>-->
-                            <!--<div class="center text-center m-t-n">-->
-                              <!--<a href="#"><i class="icon-control-play i-2x"></i></a>-->
-                            <!--</div>-->
-                            <!--<div class="bottom padder m-b-sm">-->
-                              <!--<a href="#" class="pull-right">-->
-                                <!--<i class="fa fa-heart-o"></i>-->
-                              <!--</a>-->
-                              <!--<a href="#">-->
-                                <!--<i class="fa fa-plus-circle"></i>-->
-                              <!--</a>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                          <!--<a href="#"><img src="{{static_url('images/p8.jpg')}}" alt="" class="r r-2x img-full"></a>-->
-                        <!--</div>-->
-                        <!--<div class="padder-v">-->
-                          <!--<a href="#" class="text-ellipsis">Aliquam sollicitudin venenati</a>-->
-                          <!--<a href="#" class="text-ellipsis text-xs text-muted">James East</a>-->
-                        <!--</div>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="clearfix visible-xs"></div>-->
-                    <!--<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">-->
-                      <!--<div class="item">-->
-                        <!--<div class="pos-rlt">-->
-                          <!--<div class="item-overlay opacity r r-2x bg-black">-->
-                            <!--<div class="text-info padder m-t-sm text-sm">-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star-o text-muted"></i>-->
-                            <!--</div>-->
-                            <!--<div class="center text-center m-t-n">-->
-                              <!--<a href="#"><i class="icon-control-play i-2x"></i></a>-->
-                            <!--</div>-->
-                            <!--<div class="bottom padder m-b-sm">-->
-                              <!--<a href="#" class="pull-right">-->
-                                <!--<i class="fa fa-heart-o"></i>-->
-                              <!--</a>-->
-                              <!--<a href="#">-->
-                                <!--<i class="fa fa-plus-circle"></i>-->
-                              <!--</a>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                          <!--<a href="#"><img src="{{static_url('images/p9.jpg')}}" alt="" class="r r-2x img-full"></a>-->
-                        <!--</div>-->
-                        <!--<div class="padder-v">-->
-                          <!--<a href="#" class="text-ellipsis">Lementum ligula vitae</a>-->
-                          <!--<a href="#" class="text-ellipsis text-xs text-muted">Lauren Taylor</a>-->
-                        <!--</div>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">-->
-                      <!--<div class="item">-->
-                        <!--<div class="pos-rlt">-->
-                          <!--<div class="item-overlay r r-2x bg-light dker active">-->
-                            <!--<div class="text-info padder m-t-sm text-sm">-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star-o text-muted"></i>-->
-                            <!--</div>-->
-                            <!--<div class="center text-center m-t-n">-->
-                              <!--<a href="#" data-toggle="class" class="active">-->
-                                <!--<i class="icon-control-play i-2x text"></i>-->
-                                <!--<i class="icon-control-pause i-2x text-active"></i>-->
-                              <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="bottom padder m-b-sm">-->
-                              <!--<a href="#" class="pull-right" data-toggle="class">-->
-                                <!--<i class="fa fa-heart-o text"></i>-->
-                                <!--<i class="fa fa-heart text-active text-danger"></i>-->
-                              <!--</a>-->
-                              <!--<a href="#" class="active" data-toggle="class">-->
-                                <!--<i class="fa fa-plus-circle text"></i>-->
-                                <!--<i class="fa fa-check-circle text-active text-info"></i>-->
-                              <!--</a>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                          <!--<a href="#"><img src="{{static_url('images/p10.jpg')}}" alt="" class="r r-2x img-full"></a>-->
-                        <!--</div>-->
-                        <!--<div class="padder-v">-->
-                          <!--<a href="#" class="text-ellipsis">Egestas dui nec fermentum </a>-->
-                          <!--<a href="#" class="text-ellipsis text-xs text-muted">Chris Fox</a>-->
-                        <!--</div>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="clearfix visible-xs"></div>-->
-                    <!--<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">-->
-                      <!--<div class="item">-->
-                        <!--<div class="pos-rlt">-->
-                          <!--<div class="item-overlay opacity r r-2x bg-black">-->
-                            <!--<div class="text-info padder m-t-sm text-sm">-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star-o text-muted"></i>-->
-                            <!--</div>-->
-                            <!--<div class="center text-center m-t-n">-->
-                              <!--<a href="#"><i class="icon-control-play i-2x"></i></a>-->
-                            <!--</div>-->
-                            <!--<div class="bottom padder m-b-sm">-->
-                              <!--<a href="#" class="pull-right">-->
-                                <!--<i class="fa fa-heart-o"></i>-->
-                              <!--</a>-->
-                              <!--<a href="#">-->
-                                <!--<i class="fa fa-plus-circle"></i>-->
-                              <!--</a>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                          <!--<a href="#"><img src="{{static_url('images/p11.jpg')}}" alt="" class="r r-2x img-full"></a>-->
-                        <!--</div>-->
-                        <!--<div class="padder-v">-->
-                          <!--<a href="#" class="text-ellipsis">Aliquam sollicitudin venenatis ipsum</a>-->
-                          <!--<a href="#" class="text-ellipsis text-xs text-muted">Jack Jason</a>-->
-                        <!--</div>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">-->
-                      <!--<div class="item">-->
-                        <!--<div class="pos-rlt">-->
-                          <!--<div class="item-overlay opacity r r-2x bg-black">-->
-                            <!--<div class="text-info padder m-t-sm text-sm">-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star"></i>-->
-                              <!--<i class="fa fa-star-o text-muted"></i>-->
-                            <!--</div>-->
-                            <!--<div class="center text-center m-t-n">-->
-                              <!--<a href="#"><i class="icon-control-play i-2x"></i></a>-->
-                            <!--</div>-->
-                            <!--<div class="bottom padder m-b-sm">-->
-                              <!--<a href="#" class="pull-right">-->
-                                <!--<i class="fa fa-heart-o"></i>-->
-                              <!--</a>-->
-                              <!--<a href="#">-->
-                                <!--<i class="fa fa-plus-circle"></i>-->
-                              <!--</a>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                          <!--<a href="#"><img src="{{static_url('images/p12.jpg')}}" alt="" class="r r-2x img-full"></a>-->
-                        <!--</div>-->
-                        <!--<div class="padder-v">-->
-                          <!--<a href="#" class="text-ellipsis">Vestibulum ullamcorper</a>-->
-                          <!--<a href="#" class="text-ellipsis text-xs text-muted">MM &amp; DD</a>-->
-                        <!--</div>-->
-                      <!--</div>-->
-                    <!--</div>-->
                   </div>
                   <div class="row">
                     <div class="col-md-7">
@@ -409,118 +102,6 @@
                             </div>
                           </div>
                         </div>
-                    <!--     <div class="col-xs-6 col-sm-3">
-                          <div class="item">
-                            <div class="pos-rlt">
-                              <div class="item-overlay opacity r r-2x bg-black">
-                                <div class="center text-center m-t-n">
-                                  <a href="#"><i class="fa fa-play-circle i-2x"></i></a>
-                                </div>
-                              </div>
-                              <a href="#"><img src="images/a3.png" alt="" class="r r-2x img-full"></a>
-                            </div>
-                            <div class="padder-v">
-                              <a href="#" class="text-ellipsis">Hope</a>
-                              <a href="#" class="text-ellipsis text-xs text-muted">Miya</a>
-                            </div>
-                          </div>
-                        </div> -->
-                        <!-- <div class="col-xs-6 col-sm-3">
-                          <div class="item">
-                            <div class="pos-rlt">
-                              <div class="item-overlay opacity r r-2x bg-black">
-                                <div class="center text-center m-t-n">
-                                  <a href="#"><i class="fa fa-play-circle i-2x"></i></a>
-                                </div>
-                              </div>
-                              <a href="#"><img src="images/a8.png" alt="" class="r r-2x img-full"></a>
-                            </div>
-                            <div class="padder-v">
-                              <a href="#" class="text-ellipsis">Listen wind</a>
-                              <a href="#" class="text-ellipsis text-xs text-muted">Soyia Jess</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                          <div class="item">
-                            <div class="pos-rlt">
-                              <div class="item-overlay opacity r r-2x bg-black">
-                                <div class="center text-center m-t-n">
-                                  <a href="#"><i class="fa fa-play-circle i-2x"></i></a>
-                                </div>
-                              </div>
-                              <a href="#"><img src="images/a9.png" alt="" class="r r-2x img-full"></a>
-                            </div>
-                            <div class="padder-v">
-                              <a href="#" class="text-ellipsis">Breaking me</a>
-                              <a href="#" class="text-ellipsis text-xs text-muted">Pett JA</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                          <div class="item">
-                            <div class="pos-rlt">
-                              <div class="item-overlay opacity r r-2x bg-black">
-                                <div class="center text-center m-t-n">
-                                  <a href="#"><i class="fa fa-play-circle i-2x"></i></a>
-                                </div>
-                              </div>
-                              <a href="#"><img src="images/a1.png" alt="" class="r r-2x img-full"></a>
-                            </div>
-                            <div class="padder-v">
-                              <a href="#" class="text-ellipsis">Nothing</a>
-                              <a href="#" class="text-ellipsis text-xs text-muted">Willion</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                          <div class="item">
-                            <div class="pos-rlt">
-                              <div class="item-overlay opacity r r-2x bg-black">
-                                <div class="center text-center m-t-n">
-                                  <a href="#"><i class="fa fa-play-circle i-2x"></i></a>
-                                </div>
-                              </div>
-                              <a href="#"><img src="images/a6.png" alt="" class="r r-2x img-full"></a>
-                            </div>
-                            <div class="padder-v">
-                              <a href="#" class="text-ellipsis">Panda Style</a>
-                              <a href="#" class="text-ellipsis text-xs text-muted">Lionie</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                          <div class="item">
-                            <div class="pos-rlt">
-                              <div class="item-overlay opacity r r-2x bg-black">
-                                <div class="center text-center m-t-n">
-                                  <a href="#"><i class="fa fa-play-circle i-2x"></i></a>
-                                </div>
-                              </div>
-                              <a href="#"><img src="images/a7.png" alt="" class="r r-2x img-full"></a>
-                            </div>
-                            <div class="padder-v">
-                              <a href="#" class="text-ellipsis">Hook Me</a>
-                              <a href="#" class="text-ellipsis text-xs text-muted">Gossi</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                          <div class="item">
-                            <div class="pos-rlt">
-                              <div class="item-overlay opacity r r-2x bg-black">
-                                <div class="center text-center m-t-n">
-                                  <a href="#"><i class="fa fa-play-circle i-2x"></i></a>
-                                </div>
-                              </div>
-                              <a href="#"><img src="images/a5.png" alt="" class="r r-2x img-full"></a>
-                            </div>
-                            <div class="padder-v">
-                              <a href="#" class="text-ellipsis">Tempered Song</a>
-                              <a href="#" class="text-ellipsis text-xs text-muted">Miaow</a>
-                            </div>
-                          </div>
-                        </div> -->
                       </div>
                     </div>
                     <div class="col-md-5">

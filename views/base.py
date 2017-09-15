@@ -26,3 +26,4 @@ class BaseHandler(tornado.web.RequestHandler, SessionMixin):
             self.write(json.dumps(data, indent=2, cls=MyEncoder))
         else:
             self.write(data)
+
