@@ -1,0 +1,32 @@
+09-17 01:17:37.363 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <qiniu.auth.Auth object at 0x00000000036DBC50>.
+09-17 01:17:37.564 DEBUG qiniu.py [get_file_on_qiniu] [53] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505585857&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:BbtbHr4urTNWKB_ZcATMeu7JEhI=
+09-17 01:18:00.945 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <qiniu.auth.Auth object at 0x0000000003644C88>.
+09-17 01:18:01.123 DEBUG qiniu.py [get_file_on_qiniu] [53] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505585880&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:nkN4bP3vhK5Qt2mrC-X18q-rlGs=
+09-17 01:18:18.357 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <qiniu.auth.Auth object at 0x000000000376CC50>.
+09-17 01:18:18.531 DEBUG qiniu.py [get_file_on_qiniu] [53] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505585898&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:9nGGxO3RBFIQ_TvZ1I-16u6noQg=
+09-17 01:29:58.514 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <qiniu.auth.Auth object at 0x00000000036CDC18>.
+09-17 01:29:58.889 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505586598&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:4mDVHAI81NcSwBV1pJxmkpRJnoU=
+09-17 01:33:19.410 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <qiniu.auth.Auth object at 0x000000000357AC88>.
+09-17 01:33:19.578 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505586799&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:EoEph6Z8lTEHf7xE61gGYal1Bdw=
+09-17 01:34:01.331 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <qiniu.auth.Auth object at 0x00000000035FCC88>.
+09-17 01:34:01.482 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505586841&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:cQ0DurAN5xqTqX3kTnkOSB3Gz38=
+09-17 01:35:37.574 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <qiniu.auth.Auth object at 0x000000000369CC50>.
+09-17 01:35:38.715 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505586937&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:glCIieoUvK0VCXXsvUgNRiySzwI=
+09-17 01:36:02.145 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <qiniu.auth.Auth object at 0x00000000037D7C50>.
+09-17 01:36:02.273 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505586962&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:L147CEuh5cZHW8-GocoEDsHRKFs=
+09-17 01:37:23.193 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <qiniu.auth.Auth object at 0x0000000003648C50>.
+09-17 01:37:23.347 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505587043&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:aMxO85TiFcjxh4cXPbjCrLGpNPQ=
+09-17 01:38:22.764 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <qiniu.auth.Auth object at 0x0000000003684C50>.
+09-17 01:38:23.053 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505587102&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:TgkGTUw9g91m5p3x_OZc9mI4k5o=
+09-17 01:38:44.855 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <qiniu.auth.Auth object at 0x0000000003516C50>.
+09-17 01:38:45.002 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505587124&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:wdLZ6MLSBQgxTlQ05tkr-znGkQg=
+09-17 01:38:59.762 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <qiniu.auth.Auth object at 0x00000000036E0390>.
+09-17 01:38:59.939 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505587139&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:vKqaLrUmNEjJu0-jeSPpa4C1rBQ=
+09-17 01:39:36.530 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <qiniu.auth.Auth object at 0x0000000003716C50>.
+09-17 01:39:36.675 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505587176&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:yUfl9MIIFWVCqi5VscYU5ZT8sZM=
+09-17 01:40:12.725 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <qiniu.auth.Auth object at 0x00000000034BDC88>.
+09-17 01:40:12.846 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505587212&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:ktPO4IazexMLQhkfFVfl3-O4f9E=
+09-17 01:41:05.270 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <qiniu.auth.Auth object at 0x000000000359CC50>.
+09-17 01:41:05.437 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505587265&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:mqd4Qdb6NxDWektT6AUZXGSyxtY=
+09-17 01:47:20.151 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <qiniu.auth.Auth object at 0x000000000360EC50>.
+09-17 01:47:20.295 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505581615.txt?e=1505587640&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:eJsIpaRwvmfPFn0JGHPhq_FLhhU=

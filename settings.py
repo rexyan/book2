@@ -63,3 +63,8 @@ SMTP_ADD = 'smtp.exmail.qq.com'
 SMTP_PORT = 25
 SMTP_USER = 'push@kindle15.com'
 SMTP_PASS = '18525350524Yrs'
+
+
+# 推送设置
+EMAIL_PUSH_SUBJECT = u'Kindle15电子书推送'
+EMAIL_PUSH_SENDER = [u"kinlde15推送", u'push@kindle15.com']

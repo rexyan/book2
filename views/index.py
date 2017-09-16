@@ -8,7 +8,9 @@ import os
 import time
 from common import check_code
 import io
-
+from utils import auth
+from common import up_qiniu
+from common import send_mail
 
 class IndexHandler(BaseHandler):
     def get(self):
@@ -50,7 +52,7 @@ class LoginHandler(BaseHandler):
                     data = u'账户未激活！请转到注册邮箱激活'
                 else:
                     status = True
-                    self.session.set('user_id', ['bar', 'baz'])
+                    self.session.set('user_id', x.to_dict())
         else:
             data = u'邮箱或密码不正确！'
         self.write_json(code=status, data=data)
@@ -104,6 +106,7 @@ class IFrameHandler(BaseHandler):
 
 
 class GetbookHandler(BaseHandler):
+    @auth.authenticated
     def post(self):
         import requests
         import json
@@ -144,6 +147,7 @@ class GetbookHandler(BaseHandler):
 
 
 class UpFileToServerHandler(BaseHandler):
+    @auth.authenticated
     def post(self, book_id):
         from common import up_qiniu
         douban_id = book_id
@@ -197,23 +201,15 @@ class UpFileToServerHandler(BaseHandler):
         else:
             author_obj = Author.objects.get(id=author_id)
 
-        # 保存书籍信息
-        # book_obj = Book(
-        #     name=book_info['content']['alt_title'],  # 书名
-        #     author_id=author_obj.oid,  # 作者ID
-        #     subtitle=book_info['content']['subtitle'],  # 副标题
-        #     publication=book_info['content']['pubdate'],  # 出版时间
-        #     isdb=book_info['content']['isbn13'],  # ISBN
-        #     introduction=book_info['content']['summary'],  # 简介
-        #     down_key=up_qiniu_get_file_key,  # 七牛key
-        #     img_link=book_info['content']['images']['large'],  # 豆瓣图片链接
-        #     douban_link=book_info['content']['alt'],  # 豆瓣链接
-        #     score=book_info['content']['rating']['average'],  # 豆瓣评分
-        #     integral=int(book_info['content']['pages'])/100,  # 书籍积分
-        # )
-        # book_obj.save()
-        # db_save = True
-        # db_save_msg = u'书籍信息保存成功'
+        # 保存到文件映射表
+        map_obj = File_Map(
+            user_id = self.session.get('user_id')['id'],
+            user_name = self.session.get('user_id')['name'],
+            book_id = book_info['content']['id'],
+            qiniu_key = up_qiniu_get_file_key
+        )
+        map_obj.save()
+
         if  up_qiniu and up_server_status:
             status = True
         else:
@@ -252,10 +248,69 @@ class ActivaHandler(BaseHandler):
         self.redirect("/login?user_active="+str(status))
         #self.write_json(code=status, data=data)
 
-
 class SelectVersionHandler(BaseHandler):
     def get(self):
-        self.render('select_version.html')
+        book_id = self.get_argument('book_id', None)
+        if book_id:
+            map_obj = File_Map.objects.filter(book_id =book_id)
+            print [x.to_dict() for x in map_obj]
+        self.render('select_version.html' ,map_obj=map_obj)
 
     def post(self):
         pass
+
+
+class Push_Or_DownHandler(BaseHandler):
+    @auth.authenticated
+    def get(self):
+        status = False
+        data = ''
+        id = self.get_argument('id', None)
+        type = self.get_argument('type', None)
+        # 下载七牛文件到本地
+        if id and type:
+            obj = File_Map.objects.get(id=id)
+            sta, url, key = up_qiniu.get_file_on_qiniu(obj.qiniu_key)  # 获取七牛url
+            tmp_path = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")), 'tmp_file','download_file')
+            down_status = up_qiniu.down_file(url, key, tmp_path)
+            if down_status:
+                if type == '1': # 下载
+                    with open(os.path.join(tmp_path, key), 'rb') as f:
+                        while True:
+                            data = f.read(100000)
+                            if not data:
+                                break
+                            self.write(data)
+                            # 记得有finish哦
+                    self.finish()
+            # 删除服务器文件
+            os.remove(os.path.join(tmp_path, key))
+
+    @auth.authenticated
+    def post(self):
+        status = False
+        data = ''
+        id = self.get_argument('id',None)
+        type = self.get_argument('type',None)
+        # 下载七牛文件到本地
+        if id and type:
+            obj = File_Map.objects.get(id=id)
+            sta, url, key = up_qiniu.get_file_on_qiniu(obj.qiniu_key)  # 获取七牛url
+            tmp_path = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")), 'tmp_file','download_file')
+            down_status = up_qiniu.down_file(url, key, tmp_path)
+            if down_status:
+                if type =='2': # 推送
+                    user = self.session.get('user_id')
+                    email_status = send_mail.email_att(user['mail'], '', settings.EMAIL_PUSH_SUBJECT, settings.EMAIL_PUSH_SENDER, os.path.join(tmp_path,key), key)
+                    if email_status:
+                        status = True
+                        data = u'邮件发送成功'
+                    else:
+                        data = u'邮件发送失败'
+                else:
+                    data = u'无效操作'
+                # 删除服务器文件
+                os.remove(os.path.join(tmp_path, key))
+            else:
+                data = u'文件获取失败'
+            self.write_json(code=status,data=data)

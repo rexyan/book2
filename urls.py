@@ -14,4 +14,5 @@ url = [
         (r"/get_check_code", CheckCodeHandler),
         (r"/activation/(\w*)", ActivaHandler),
         (r"/select_version", SelectVersionHandler),
+        (r"/push_down_book", Push_Or_DownHandler),
       ]

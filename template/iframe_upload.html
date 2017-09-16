@@ -32,7 +32,12 @@
                             $("#book_id").attr("value",window.obj['data']['id']);
 
                       }
-                  }
+                  },
+                    error: function(XMLHttpRequest) {
+                        if ((XMLHttpRequest.status) == 403){
+                             layer.alert('未登录，请登录后再进行操作！', {icon: 5});
+                        }
+                    }
                 });
         }
 

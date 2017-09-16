@@ -81,7 +81,8 @@ class BookCache(models.Document, BaseDoc):  # 从豆瓣获取书籍信息后，�
 
 class File_Map(models.Document, BaseDoc):
     user_id = models.StringField(max_length=100) # 上传用户ID
+    user_name = models.StringField(max_length=100) # 上传用户name
     book_id = models.StringField(max_length=100) # 书籍ID
-    qiniu_link =  models.StringField(max_length=100) # 七牛链接
+    qiniu_key =  models.StringField(max_length=100) # 七牛链接
     up_time = models.DateTimeField(default=datetime.datetime.now)  # 上传时间
-    recommend_count = models.IntField(default=0)  # 推荐次数
+    down_count = models.IntField(default=0)  # 下载次数

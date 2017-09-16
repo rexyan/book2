@@ -9,26 +9,69 @@
     <link href="http://cdn.bootcss.com/twitter-bootstrap/2.0.4/css/bootstrap.min.css" rel="stylesheet">
     <script src="{{static_url('js/jquery.min.js')}}"></script>
     <script type="text/javascript" src="{{static_url('layer/layer.js')}}"></script>
+    <script>
+        function push_down_email(id,type) {
+            if (type == '1'){
+               var method = 'GET'
+            }else {
+               var method = 'POST'
+            }
+            $.ajax({
+                  type: method,
+                  url: '/push_down_book',
+                  data: {'id':id,'type':type},
+                  success:function (arg, status, request) {
+                      window.obj = (JSON.parse(arg))
+                      console.log(window.obj)
+                      if (method == 'GET'){
+                          var disp = arg.getResponseHeader('Content-Disposition');
+                          if (disp && disp.search('attachment') != -1) {  //判断是否为文件
+                                var form = $('<form method="POST" action="' + url + '">');
+                                $.each(params, function(k, v) {
+                                    form.append($('<input type="hidden" name="' + k +
+                                            '" value="' + v + '">'));
+                                });
+                                $('body').append(form);
+                                form.submit(); //自动提交
+                            }
+                      }
+
+                      if (window.obj['code']==false){
+                            layer.alert( window.obj['data'], {icon: 5});
+                      }else{
+                            layer.alert( window.obj['data'], {icon: 6});
+                      }
+                  },
+                    error: function(XMLHttpRequest) {
+                        if ((XMLHttpRequest.status) == 403){
+                             layer.alert('未登录，请登录后再进行操作！', {icon: 5});
+                        }
+                    }
+                });
+        }
+    </script>
 </head>
 <body>
 
 <div style="text-align:left;margin: 40px 0px 0px 50px; " class="divcss5"><span class="btn btn-s-md btn-info">请选择对应版本进行推送或下载:</span></div>
+    {% for x in map_obj %}
     <div class="btn-group" style="margin: 20px 0px 0px 50px;">
           <button type="button" class="btn btn-default">1</button>
         <p>
             <a class="btn btn-default" id="btn-1" href="#btn-1" data-toggle="class:btn-success">
               <i class="fa fa-cloud-upload text"></i>
-              <span class="text">1505403775.txt</span>
+              <span class="text">{{ x.qiniu_key }}</span>
             </a>
             <a class="btn btn-default" data-toggle="button">
               <span class="text">
-                <i class="fa fa-thumbs-up text-success"></i> 2017-01-01 &nbsp; 由用户  &nbsp; “rex” &nbsp; 上传
+                <i class="fa fa-thumbs-up text-success"></i> &nbsp; 由用户  &nbsp; “{{ x.user_name }}” &nbsp; 上传
               </span>
             </a>
-              <button type="button" class="btn btn-default">推荐次数:34</button>
-              <button type="button" class="btn btn-default">下载到本地</button>
-              <button type="button" class="btn btn-default">推送到邮箱</button>
+              <button type="button" class="btn btn-default">推荐次数:{{ x.down_count }}</button>
+              <button type="button" class="btn btn-warning" onclick="push_down_email('{{ x.id }}',1)">下载到本地</button>
+              <button type="button" class="btn btn-success" onclick="push_down_email('{{ x.id }}',2)">推送到邮箱</button>
         </p>
     </div>
+    {% end %}
 </body>
 </html>

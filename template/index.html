@@ -23,6 +23,7 @@ layer.open({
 });
 
 function down_book(arg) {
+    var id= ( $(".fa-plus-square").attr('tag'))
     layer.open({
             type: 2,
             title: '版本选择',
@@ -30,7 +31,7 @@ function down_book(arg) {
             shade: false,
             maxmin: true,
             area: ['800px;', '580px;'],
-            content: '/select_version?book_id='+arg.tag //iframe的url
+            content: '/select_version?book_id='+id //iframe的url
     });
 }
 </script>

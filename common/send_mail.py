@@ -24,6 +24,7 @@ def email(email_list, content, subject, sender):  # email_list邮件列表，con
     server.sendmail('push@kindle15.com', email_list, msg.as_string())
     server.quit()
     log.debug(u'普通邮件发送成功', email_list, content, subject, sender)
+    return True
 
 
 def email_att(email_list, content, subject, sender, file_path, file_name):
@@ -64,8 +65,10 @@ def email_att(email_list, content, subject, sender, file_path, file_name):
         server.login(settings.SMTP_USER, settings.SMTP_PASS)  # 邮箱名，密码
         server.sendmail('push@kindle15.com', email_list, message.as_string())
         log.debug(u'附件邮件发送成功', email_list, content, subject, sender)
+        return True
     except smtplib.SMTPException:
         log.debug(u'附件邮件发送失败', email_list, content, subject, sender)
+        return False
 
 
 if __name__ == '__main__':

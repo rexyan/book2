@@ -1,0 +1,341 @@
+09-12 20:14:31.696 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-12 20:24:09.804 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-12 20:28:26.973 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-12 20:32:25.777 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-12 20:32:56.121 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-12 20:33:18.823 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-12 20:35:49.232 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-12 20:38:56.470 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-12 20:40:01.872 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-12 20:50:27.346 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-12 22:35:17.461 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-12 22:53:03.496 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 09:55:58.406 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 17:03:45.055 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 17:25:19.032 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 17:27:02.081 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 17:29:19.300 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 18:11:35.555 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 18:16:30.319 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 21:13:23.057 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 21:16:55.775 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 21:26:42.286 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 21:50:39.472 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 21:52:00.164 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 21:52:48.131 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 21:54:12.270 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 21:57:53.306 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 21:58:23.168 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:01:30.426 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:02:00.820 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:02:29.268 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:05:23.345 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:06:41.768 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:07:07.599 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:07:50.235 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:08:11.659 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:08:29.487 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:09:03.280 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:09:27.735 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:09:59.829 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:10:25.876 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:10:48.714 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:11:22.395 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:11:46.068 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:12:20.532 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:12:47.974 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:13:01.280 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:13:15.483 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:13:44.453 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:14:51.343 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:15:38.623 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:16:04.873 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:17:34.133 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:19:01.930 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:22:09.401 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-13 22:52:33.951 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 16:52:34.615 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:01:12.672 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:13:41.759 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:16:06.032 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:16:54.536 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:17:36.914 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:19:03.755 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:21:22.938 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:22:12.494 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:24:49.299 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:24:58.570 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:25:54.185 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:25:55.685 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:26:25.889 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:27:12.827 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:30:51.713 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:31:30.488 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:32:37.673 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:34:09.638 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:36:59.878 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:37:57.209 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:39:42.397 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:39:46.485 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:41:22.743 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:49:11.886 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:50:10.952 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:51:07.774 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:55:07.212 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 17:56:26.719 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:00:08.041 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:03:01.378 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:03:11.271 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:04:59.869 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:10:35.872 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:18:19.351 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:19:47.922 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:22:42.684 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:25:40.190 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:26:18.686 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:27:08.008 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:27:49.888 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:29:20.336 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:41:43.356 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:43:10.104 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:43:59.148 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:44:31.787 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:45:14.906 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:48:39.638 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:50:21.994 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:51:09.687 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:52:21.979 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:52:48.299 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:53:31.009 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 18:54:56.448 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 19:00:16.571 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 19:03:08.059 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 19:03:49.759 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 19:03:52.769 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 19:04:43.789 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 20:30:06.708 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 20:31:44.520 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 21:35:43.909 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 21:37:18.010 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 21:38:24.946 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 21:44:59.485 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 21:46:14.286 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 21:47:02.055 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 21:48:28.908 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 21:50:18.402 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 21:50:42.220 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000006A0F748>.
+09-14 21:50:42.550 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505397042.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505397042.txt"}, req_id:jwEAAP-tNuqkPuQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:5;UP:6
+09-14 21:55:38.579 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 21:58:40.407 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 21:59:31.924 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 21:59:41.933 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:00:31.991 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:00:41.582 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:01:51.521 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:15:42.694 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:16:01.205 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x000000000696FAC8>.
+09-14 22:16:01.389 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505398561.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505398561.txt"}, req_id:LVIAAD107I0GQOQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:3;rs-upload.putFile:6;UP:8
+09-14 22:16:24.938 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:16:48.977 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000007D21A90>.
+09-14 22:16:50.155 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505398604.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505398604.txt"}, req_id:B2EAAHLxMugRQOQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:3;rs-upload.putFile:5;UP:12
+09-14 22:23:55.587 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:25:21.441 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:25:39.498 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000007E38400>.
+09-14 22:25:39.624 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505399131.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505399131.txt"}, req_id:ahkAAIidhC-NQOQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:4;rs.put:5;rs-upload.putFile:7;UP:13
+09-14 22:27:13.406 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:27:53.185 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000007BCADD8>.
+09-14 22:27:53.336 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505399271.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505399271.txt"}, req_id:jwEAAMlH_VCsQOQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:5;rdb.g/no such key;DBD/404;v4.get:1/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:4;rs.put:10;rs-upload.putFile:16;UP:17
+09-14 22:29:42.170 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:30:17.630 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000006AFF630>.
+09-14 22:30:17.761 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505399417.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505399417.txt"}, req_id:aG0AAFHGYvLNQOQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:5;rs-upload.putFile:8;UP:10
+09-14 22:33:56.724 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:34:13.168 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x00000000069C07B8>.
+09-14 22:34:13.271 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505399653.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505399653.txt"}, req_id:XRAAAJcK-ccEQeQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:2;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:7;UP:9
+09-14 22:36:35.937 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:37:44.815 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:38:51.686 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:40:43.520 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:41:24.441 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000007F13C50>.
+09-14 22:41:27.164 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FpHYBcgPKipSjX5UeMqjvTXsmKaO', u'key': u'1505400068.mobi'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FpHYBcgPKipSjX5UeMqjvTXsmKaO","key":"1505400068.mobi"}, req_id:sQgAAJGbRslpQeQU, x_log:body:18;s.ph;s.put.tw:1;s.put.tr:63;s.put.tw:3;s.put.tr:60;s.ph;s.put.tw:1;s.put.tr:70;s.ph;PFDS:74;PFDS:75;PFDS:77;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_18.sel/not found;rs36_18.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:4;rs.put:5;rs-upload.putFile:83;UP:104
+09-14 22:42:46.449 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:43:10.882 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x000000000358DA20>.
+09-14 22:43:20.135 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FpHYBcgPKipSjX5UeMqjvTXsmKaO', u'key': u'1505400186.mobi'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FpHYBcgPKipSjX5UeMqjvTXsmKaO","key":"1505400186.mobi"}, req_id:bHMAANT5oRaEQeQU, x_log:body:37;s.ph;s.put.tw:4;s.put.tr:28;s.put.tw:3;s.put.tr:27;s.ph;s.put.tw:2;s.put.tr:27;s.ph;PFDS:31;PFDS:33;PFDS:36;rdb.g/no such key;DBD/404;v4.get:4/Document not found;rs36_9.sel/not found;rs36_9.ups;rwro.upsc:5;mc.s/500;mc.d/404;mc.d/404;RS:6;rs.put:7;rs-upload.putFile:45;UP:88
+09-14 22:44:29.142 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:44:58.904 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000007D9FDA0>.
+09-14 22:45:02.949 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FpHYBcgPKipSjX5UeMqjvTXsmKaO', u'key': u'1505400294.mobi'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FpHYBcgPKipSjX5UeMqjvTXsmKaO","key":"1505400294.mobi"}, req_id:LFkAAGwHpPubQeQU, x_log:body:25;s.ph;s.put.tw:67;s.put.tr:125;s.put.tw:3;s.put.tr:193;s.ph;s.put.tw:2;s.put.tr:199;s.ph;PFDS:202;PFDS:204;PFDS:251;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_9.sel/not found;rs36_9.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:3;rs-upload.putFile:256;UP:292
+09-14 22:49:37.630 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:49:58.810 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x00000000069209E8>.
+09-14 22:50:01.293 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FpHYBcgPKipSjX5UeMqjvTXsmKaO', u'key': u'1505400598.mobi'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FpHYBcgPKipSjX5UeMqjvTXsmKaO","key":"1505400598.mobi"}, req_id:5VcAAFa1SnnhQeQU, x_log:body:25;s.ph;s.put.tw:1;s.put.tr:93;s.put.tw:39;s.put.tr:72;s.ph;s.put.tw:2;s.put.tr:111;s.ph;PFDS:114;PFDS:115;PFDS:122;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_18.sel/not found;rs36_18.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:7;rs-upload.putFile:133;UP:163
+09-14 22:50:36.310 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x000000000690B6A0>.
+09-14 22:50:36.384 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505400636.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505400636.txt"}, req_id:XRAAAHa4V67pQeQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups:14;rwro.upsc:15;mc.s/500;mc.d/404;mc.d/404;RS:16;rs.put:18;rs-upload.putFile:20;UP:23
+09-14 22:51:26.351 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 22:51:45.531 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x000000000695DE80>.
+09-14 22:51:46.650 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505400705.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505400705.txt"}, req_id:kHYAAE0KBwv6QeQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:2;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:14;rs-upload.putFile:17;UP:20
+09-14 22:59:28.356 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:01:54.848 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:03:41.768 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:04:12.973 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:07:37.243 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:08:52.761 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:12:37.942 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:13:29.992 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:15:29.502 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:15:47.704 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x00000000069984E0>.
+09-14 23:15:50.461 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FpHYBcgPKipSjX5UeMqjvTXsmKaO', u'key': u'1505402147.mobi'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FpHYBcgPKipSjX5UeMqjvTXsmKaO","key":"1505402147.mobi"}, req_id:tXUAADztWzNKQ-QU, x_log:body:36;s.ph;s.put.tw:2;s.put.tr:22;s.put.tw:2;s.put.tr:22;s.ph;s.put.tw:4;s.put.tr:24;s.ph;PFDS:30;PFDS:32;PFDS:33;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_18.sel/not found;rs36_18.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:4;rs-upload.putFile:39;UP:79
+09-14 23:16:30.581 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000006C46908>.
+09-14 23:16:30.643 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505402190.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505402190.txt"}, req_id:_RAAANAmXpJTQ-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:4;rs-upload.putFile:5;UP:8
+09-14 23:16:58.120 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:17:16.743 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:17:30.204 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x00000000066BFD30>.
+09-14 23:17:30.333 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505402250.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505402250.txt"}, req_id:LFkAAA4NqndhQ-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:3;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:7;UP:20
+09-14 23:18:47.723 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:18:57.738 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x00000000067539B0>.
+09-14 23:18:57.837 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505402337.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505402337.txt"}, req_id:iHwAAAFsPdh1Q-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:5;UP:7
+09-14 23:19:51.289 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:21:23.755 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:21:36.480 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x000000000698BA58>.
+09-14 23:21:39.450 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FpHYBcgPKipSjX5UeMqjvTXsmKaO', u'key': u'1505402496.mobi'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FpHYBcgPKipSjX5UeMqjvTXsmKaO","key":"1505402496.mobi"}, req_id:B2EAABtr6G-bQ-QU, x_log:body:18;s.ph;s.put.tw:2;s.put.tr:120;s.put.tw:83;s.put.tr:49;s.ph;s.put.tw:3;s.put.tr:128;s.ph;PFDS:134;PFDS:136;PFDS:137;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_9.sel/not found;rs36_9.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:145;UP:168
+09-14 23:22:27.979 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000006BE5BA8>.
+09-14 23:22:28.041 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505402547.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505402547.txt"}, req_id:BQwAAMMAFcmmQ-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:9;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:4;rs-upload.putFile:15;UP:18
+09-14 23:23:48.500 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000006E8EFD0>.
+09-14 23:23:48.622 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505402628.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505402628.txt"}, req_id:sSAAAAwxgYy5Q-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:4;rs-upload.putFile:9;UP:10
+09-14 23:32:33.382 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:32:47.818 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x00000000068B1AC8>.
+09-14 23:32:47.925 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505403167.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505403167.txt"}, req_id:uBsAAOQRhR43ROQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:3;rdb.g/no such key;DBD/404;v4.get:6/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:7;mc.s/500;mc.d/404;mc.d/404;RS:8;rs.put:9;rs-upload.putFile:13;UP:15
+09-14 23:33:38.982 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000006968BA8>.
+09-14 23:33:41.232 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FpHYBcgPKipSjX5UeMqjvTXsmKaO', u'key': u'1505403218.mobi'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FpHYBcgPKipSjX5UeMqjvTXsmKaO","key":"1505403218.mobi"}, req_id:jwEAAGkPcIVDROQU, x_log:body:17;s.ph;s.put.tw:1;s.put.tr:17;s.put.tw:1;s.put.tr:21;s.ph;s.put.tw:2;s.put.tr:19;s.ph;PFDS:24;PFDS:25;PFDS:25;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_18.sel/not found;rs36_18.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:29;UP:49
+09-14 23:35:27.983 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:35:43.668 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x00000000067E2BA8>.
+09-14 23:35:46.393 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FpHYBcgPKipSjX5UeMqjvTXsmKaO', u'key': u'1505403343.mobi'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FpHYBcgPKipSjX5UeMqjvTXsmKaO","key":"1505403343.mobi"}, req_id:kXoAAGOR6qdgROQU, x_log:body:25;s.ph;s.put.tw:3;s.put.tr:28;s.put.tw:3;s.put.tr:38;s.ph;s.put.tw:1;s.put.tr:33;s.ph;PFDS:36;PFDS:46;PFDS:47;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_9.sel/not found;rs36_9.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:4;rs-upload.putFile:53;UP:79
+09-14 23:37:16.929 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:38:01.230 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000006869DD8>.
+09-14 23:38:02.331 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505403481.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505403481.txt"}, req_id:ahkAAID1ClOAROQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:5;UP:6
+09-14 23:38:45.630 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:39:21.966 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x000000000369C780>.
+09-14 23:39:25.984 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FpHYBcgPKipSjX5UeMqjvTXsmKaO', u'key': u'1505403547.mobi'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FpHYBcgPKipSjX5UeMqjvTXsmKaO","key":"1505403547.mobi"}, req_id:jEcAAGeNl8GTROQU, x_log:body:72;s.ph;s.put.tw:2;s.put.tr:92;s.put.tw:2;s.put.tr:97;s.ph;s.put.tw:75;s.put.tr:25;s.ph;PFDS:102;PFDS:103;PFDS:104;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_9.sel/not found;rs36_9.ups;rwro.upsc:2;mc.s/500;mc.d/404;mc.d/404;RS:4;rs.put:5;rs-upload.putFile:111;UP:192
+09-14 23:40:11.552 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:41:17.750 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000007EE6EB8>.
+09-14 23:41:18.854 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505403674.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505403674.txt"}, req_id:5WcAAAN0hROuROQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS:2;PFDS:3;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:3;rs-upload.putFile:8;UP:9
+09-14 23:41:46.980 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:42:55.257 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x00000000066DC978>.
+09-14 23:42:55.356 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505403775.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505403775.txt"}, req_id:LVIAAICLDI3EROQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:4;rs-upload.putFile:5;UP:12
+09-14 23:43:45.478 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000006AF9C88>.
+09-14 23:43:45.528 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505403825.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505403825.txt"}, req_id:QUwAABNVvjvQROQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:5;UP:8
+09-14 23:44:30.139 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-14 23:44:47.064 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x000000000685D518>.
+09-14 23:44:47.198 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505403887.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505403887.txt"}, req_id:ngMAAHRC8JbeROQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:2;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:2;mc.s/500;mc.d/404;mc.d/404;RS:4;rs.put:5;rs-upload.putFile:8;UP:11
+09-14 23:46:00.207 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x000000000690E278>.
+09-14 23:46:03.350 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FpHYBcgPKipSjX5UeMqjvTXsmKaO', u'key': u'1505403960.mobi'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FpHYBcgPKipSjX5UeMqjvTXsmKaO","key":"1505403960.mobi"}, req_id:sSAAAGyOCk_wROQU, x_log:body:16;s.ph;s.put.tw:2;s.put.tr:17;s.put.tw:3;s.put.tr:20;s.ph;s.put.tw:1;s.put.tr:24;s.ph;PFDS:27;PFDS:28;PFDS:29;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_18.sel/not found;rs36_18.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:15;rs-upload.putFile:46;UP:67
+09-15 09:47:18.399 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 09:49:01.218 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x04C90F90>.
+09-15 09:49:03.278 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FuzbA6vSdO5d9Gr30lJTmLs4PrRB', u'key': u'1505440141.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FuzbA6vSdO5d9Gr30lJTmLs4PrRB","key":"1505440141.txt"}, req_id:ahkAAE11mXvWZeQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:4;rs-upload.putFile:6;UP:9
+09-15 09:57:30.541 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x03BE8A50>.
+09-15 09:57:30.585 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FuzbA6vSdO5d9Gr30lJTmLs4PrRB', u'key': u'1505440650.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FuzbA6vSdO5d9Gr30lJTmLs4PrRB","key":"1505440650.txt"}, req_id:ngMAAO87LplMZuQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:6;UP:9
+09-15 09:58:25.909 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x03B522B0>.
+09-15 09:58:25.937 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FuzbA6vSdO5d9Gr30lJTmLs4PrRB', u'key': u'1505440705.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FuzbA6vSdO5d9Gr30lJTmLs4PrRB","key":"1505440705.txt"}, req_id:uBsAAHzn2HxZZuQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:2;rs-upload.putFile:5;UP:6
+09-15 10:18:56.410 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x04C17250>.
+09-15 10:18:56.458 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FuzbA6vSdO5d9Gr30lJTmLs4PrRB', u'key': u'1505441936.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FuzbA6vSdO5d9Gr30lJTmLs4PrRB","key":"1505441936.txt"}, req_id:sSAAADTaUfx3Z-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS:1;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:5;rs-upload.putFile:7;UP:10
+09-15 10:19:03.124 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x04C17E90>.
+09-15 10:19:03.155 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FuzbA6vSdO5d9Gr30lJTmLs4PrRB', u'key': u'1505441943.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FuzbA6vSdO5d9Gr30lJTmLs4PrRB","key":"1505441943.txt"}, req_id:LVIAAM-mc4t5Z-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS:1;PFDS:2;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:4;rs.put:5;rs-upload.putFile:8;UP:11
+09-15 10:20:39.976 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 10:28:26.263 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0414F4D0>.
+09-15 10:28:26.324 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FuzbA6vSdO5d9Gr30lJTmLs4PrRB', u'key': u'1505442506.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FuzbA6vSdO5d9Gr30lJTmLs4PrRB","key":"1505442506.txt"}, req_id:uBsAAMOCaqr8Z-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:10;rs.put:14;rs-upload.putFile:16;UP:18
+09-15 10:28:55.972 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0504E410>.
+09-15 10:28:56.005 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FuzbA6vSdO5d9Gr30lJTmLs4PrRB', u'key': u'1505442535.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FuzbA6vSdO5d9Gr30lJTmLs4PrRB","key":"1505442535.txt"}, req_id:fw8AANgetZMDaOQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS:3;PFDS:4;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:8;UP:10
+09-15 10:29:15.788 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x04FFFF70>.
+09-15 10:29:15.828 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FuzbA6vSdO5d9Gr30lJTmLs4PrRB', u'key': u'1505442555.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FuzbA6vSdO5d9Gr30lJTmLs4PrRB","key":"1505442555.txt"}, req_id:0k0AAMRA0TAIaOQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS:3;PFDS:11;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc;mc.s/500;mc.d/404;mc.d/404;RS:1;rs.put:2;rs-upload.putFile:14;UP:17
+09-15 10:29:35.717 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x04EFAAB0>.
+09-15 10:29:35.761 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FuzbA6vSdO5d9Gr30lJTmLs4PrRB', u'key': u'1505442575.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FuzbA6vSdO5d9Gr30lJTmLs4PrRB","key":"1505442575.txt"}, req_id:JwMAABom29QMaOQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:5;rs-upload.putFile:14;UP:19
+09-15 10:29:50.996 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x04EE9190>.
+09-15 10:29:51.034 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'FuzbA6vSdO5d9Gr30lJTmLs4PrRB', u'key': u'1505442590.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FuzbA6vSdO5d9Gr30lJTmLs4PrRB","key":"1505442590.txt"}, req_id:sSAAAPsCM2MQaOQU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:10;rs.put:12;rs-upload.putFile:14;UP:17
+09-15 11:47:42.594 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 12:05:30.429 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 12:17:33.581 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 12:30:54.476 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 13:52:57.078 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 14:04:23.021 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 14:04:54.470 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 14:12:05.184 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 14:12:07.563 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 14:12:57.536 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 14:14:23.154 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 14:16:10.938 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 14:17:06.030 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 15:15:14.629 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 15:16:20.665 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 15:29:25.681 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 15:53:45.725 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 15:53:50.812 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 15:56:10.141 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 15:57:12.583 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:25:17.072 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:25:38.138 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:27:33.349 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:32:36.727 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:34:23.914 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:35:40.702 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:36:05.529 DEBUG send_mail.py [email] [26] - 普通邮件发送成功[u'1572402228@qq.com']http://127.0.0.1:3344/activation/user_key=1505464563Kindle15-账户激活[u'kinlde15', u'book@kindle15.com']
+09-15 16:41:19.782 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:42:53.501 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:44:09.598 DEBUG send_mail.py [email] [26] - 普通邮件发送成功[u'1572402228@qq.com']http://127.0.0.1:3344/activation/user_key=4ca71ade79622db993544d58fcf9202b3ad26512Kindle15-账户激活[u'kinlde15', u'book@kindle15.com']
+09-15 16:45:39.015 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:47:00.916 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:48:42.531 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:48:46.381 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:58:53.348 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 16:59:22.867 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 17:12:52.131 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 17:13:17.181 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 17:24:10.158 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 17:49:22.848 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 17:51:55.925 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 17:52:46.591 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 17:52:48.262 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 17:54:03.649 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 17:55:13.644 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 17:56:12.200 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 17:57:30.693 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 17:58:12.179 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 18:01:26.478 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 18:01:30.250 DEBUG run.py [<module>] [23] - Tornado server started on port 3344.
+09-15 19:51:39.321 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-15 19:53:20.493 DEBUG send_mail.py [email] [26] - 普通邮件发送成功[u'1572402228@qq.com']http://127.0.0.1:3344/activation/?user_key=f8fb584981cafd2fc1cca4e663adc81d48cb7253Kindle15-账户激活[u'kinlde15', u'book@kindle15.com']
+09-15 22:11:22.108 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-15 22:17:10.168 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-15 22:29:29.981 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x00000000058332E8>.
+09-15 22:29:36.459 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fvv2jnwPD04N0uR2pNRoiZQq-Xqi', u'key': u'1505485769.pdf'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fvv2jnwPD04N0uR2pNRoiZQq-Xqi","key":"1505485769.pdf"}, req_id:jEcAAOCCIwhZj-QU, x_log:body:31;s.ph;s.put.tw:2;s.put.tr:21;s.put.tw:4;s.put.tr:23;s.ph;s.put.tw:2;s.put.tr:26;s.ph;PFDS:31;PFDS:32;PFDS:33;rdb.g/no such key;DBD/404;v4.get:68/Document not found;rs36_4.sel/not found;rs36_4.ups;rwro.upsc:69;mc.s/500;mc.d/404;mc.d/404;RS:71;rs.put:72;rs-upload.putFile:113;UP:148
+09-15 22:30:25.018 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x00000000058884E0>.
+09-15 22:30:25.111 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505485825.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505485825.txt"}, req_id:Z0wAAKeeDWRkj-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get:1/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:2;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:5;rs-upload.putFile:8;UP:14
+09-15 22:30:49.425 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x00000000058884A8>.
+09-15 22:30:49.505 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505485849.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505485849.txt"}, req_id:_RAAAOjImhJqj-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:5;UP:11
+09-15 22:30:59.082 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005D13E10>.
+09-15 22:30:59.194 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505485859.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505485859.txt"}, req_id:IGkAACb4zVFsj-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS:2;PFDS:3;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:7;UP:12
+09-15 22:31:11.327 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005D13F28>.
+09-15 22:31:11.401 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505485871.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505485871.txt"}, req_id:gyUAABjAhCtvj-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:16;rs-upload.putFile:19;UP:21
+09-15 22:31:23.008 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005D13C18>.
+09-15 22:31:23.074 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505485883.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505485883.txt"}, req_id:u3oAACsXG-Rxj-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:2;rs-upload.putFile:4;UP:9
+09-15 22:31:33.111 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005888160>.
+09-15 22:31:33.192 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505485893.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505485893.txt"}, req_id:J2kAAIJdFD90j-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:4;rs.put:5;rs-upload.putFile:7;UP:10
+09-15 22:32:31.269 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005D13048>.
+09-15 22:32:49.853 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fto5o-5ea0sNMlW_75VgGJCv2AcJ', u'key': u'1505485951.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fto5o-5ea0sNMlW_75VgGJCv2AcJ","key":"1505485951.txt"}, req_id:PUkAAPpr2xOGj-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS:1;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:4;rs.put:5;rs-upload.putFile:9;UP:13
+09-15 22:33:21.077 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005D13BA8>.
+09-15 22:33:21.157 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505486001.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505486001.txt"}, req_id:JwMAAKbDlWKNj-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:6;UP:8
+09-15 22:33:31.820 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005D13128>.
+09-15 22:33:31.951 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505486011.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505486011.txt"}, req_id:IGkAAAXjO-WPj-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS:1;PFDS:3;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:13;UP:13
+09-15 22:33:42.566 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005D13C18>.
+09-15 22:33:42.634 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505486022.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505486022.txt"}, req_id:JwMAACgytmKSj-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:5;UP:6
+09-15 22:33:51.566 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005D13048>.
+09-15 22:33:51.685 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505486031.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505486031.txt"}, req_id:tXUAACcdRnuUj-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:5;UP:7
+09-15 22:34:26.535 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005D13D30>.
+09-15 22:34:26.614 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505486066.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505486066.txt"}, req_id:gyUAACOJoJ-cj-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel:2/not found;rs36_3.ups;rwro.upsc:3;mc.s/500;mc.d/404;mc.d/404;RS:5;rs.put:5;rs-upload.putFile:8;UP:8
+09-15 22:34:34.365 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005D13EB8>.
+09-15 22:34:34.432 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505486074.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505486074.txt"}, req_id:PUkAAHjytHCej-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:5;UP:6
+09-15 22:34:43.095 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005D13BA8>.
+09-15 22:34:43.198 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505486083.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505486083.txt"}, req_id:IGkAANLZinygj-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:4;rs-upload.putFile:6;UP:7
+09-15 22:34:50.959 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005D13978>.
+09-15 22:34:51.055 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505486090.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505486090.txt"}, req_id:XRAAAChtSE-ij-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:25;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups:1;rwro.upsc:2;mc.s/500;mc.d/404;mc.d/404;RS:4;rs.put:5;rs-upload.putFile:31;UP:33
+09-15 22:34:59.990 DEBUG qiniu.py [authentication_qiniu] [19] - authentication_qiniu <common.qiniu.auth.Auth object at 0x00000000059DD390>.
+09-15 22:35:00.054 DEBUG qiniu.py [upload_file_to_qiniu] [39] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505486099.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505486099.txt"}, req_id:gxcAAC3P3mekj-QU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:6;UP:9
+09-15 23:16:25.309 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-15 23:17:23.992 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-15 23:36:47.881 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
