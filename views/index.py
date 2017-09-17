@@ -11,11 +11,19 @@ import io
 from utils import auth
 from common import up_qiniu
 from common import send_mail
+from common.log_utils import getLogger
+log = getLogger('index.py')
+
 
 class IndexHandler(BaseHandler):
     def get(self):
         book = get_hot_book()
-        self.render('index.html', book=book)
+
+        # 下载排行
+        book_down_order_id = get_order_book_down()
+        book_down_order_id_list =  [x.book_id for x in book_down_order_id]
+        book_down_order_data = get_book_id(book_down_order_id_list)
+        self.render('index.html', book=book, book_down_order_data = book_down_order_data)
 
 
 class UploadHandler(BaseHandler):
@@ -273,18 +281,28 @@ class Push_Or_DownHandler(BaseHandler):
             sta, url, key = up_qiniu.get_file_on_qiniu(obj.qiniu_key)  # 获取七牛url
             tmp_path = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")), 'tmp_file','download_file')
             down_status = up_qiniu.down_file(url, key, tmp_path)
+            user = self.session.get('user_id')
             if down_status:
                 if type == '1': # 下载
-                    with open(os.path.join(tmp_path, key), 'rb') as f:
+                    down_data_file = os.path.join(tmp_path, key)
+                    self.set_header('Content-Type', 'application/octet-stream')
+                    self.set_header('Content-Disposition', 'attachment; filename=' + key)
+                    with open(down_data_file, "rb") as f:
                         while True:
-                            data = f.read(100000)
+                            data = f.read(4096)
                             if not data:
                                 break
                             self.write(data)
-                            # 记得有finish哦
-                    self.finish()
-            # 删除服务器文件
-            os.remove(os.path.join(tmp_path, key))
+        self.finish()
+        status = True
+        # 删除服务器文件
+        down_obj = Down(
+            user_id=user['id'],
+            book_id=id,
+            status=status
+        )
+        down_obj.save()
+        os.remove(os.path.join(tmp_path, key))
 
     @auth.authenticated
     def post(self):
@@ -313,4 +331,12 @@ class Push_Or_DownHandler(BaseHandler):
                 os.remove(os.path.join(tmp_path, key))
             else:
                 data = u'文件获取失败'
+            push_obj = Push(
+                user_id =user['id'] ,
+                book_id = id,
+                status = status
+            )
+            push_obj.save()
+            obj.push_down_count = obj.push_down_count+1
+            obj.save()
             self.write_json(code=status,data=data)

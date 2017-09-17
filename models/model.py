@@ -51,13 +51,15 @@ class Author(models.Document, BaseDoc):
 
 
 class Down(models.Document, BaseDoc):
-    user_id = models.IntField(max_length=20)  # 书籍ID
-    book_id = models.IntField(max_length=20)  # BookID
+    user_id = models.StringField(max_length=50)  # 书籍ID
+    book_id = models.StringField(max_length=50)  # BookID
+    status = models.BooleanField(default=False) # 下载状态
 
 
 class Push(models.Document, BaseDoc):
-    user_id = models.IntField(max_length=20)  # 书籍ID
-    book_id = models.IntField(max_length=20)  # BookID
+    user_id = models.StringField(max_length=50)  # 书籍ID
+    book_id = models.StringField(max_length=50)  # BookID
+    status = models.BooleanField(default=False)  # 推送状态
 
 
 class Collection(models.Document, BaseDoc):   # 收藏表
@@ -85,4 +87,4 @@ class File_Map(models.Document, BaseDoc):
     book_id = models.StringField(max_length=100) # 书籍ID
     qiniu_key =  models.StringField(max_length=100) # 七牛链接
     up_time = models.DateTimeField(default=datetime.datetime.now)  # 上传时间
-    down_count = models.IntField(default=0)  # 下载次数
+    push_down_count = models.IntField(default=0)  # 下载次数

@@ -23,7 +23,7 @@ layer.open({
 });
 
 function down_book(arg) {
-    var id= ( $(".fa-plus-square").attr('tag'))
+    var id= (arg.title)
     layer.open({
             type: 2,
             title: '版本选择',
@@ -71,7 +71,7 @@ function down_book(arg) {
               <span class="pull-right m-t-sm m-r-sm badge bg-info">{{ x.content['rating']['average'] }} </span>
             </div>
             <div class="bottom">
-              <span class="badge bg-info m-l-sm m-b-sm">1000</span>
+              <span class="badge bg-info m-l-sm m-b-sm"></span>
 
             </div>
             <div class="item-overlay opacity r r-2x bg-black">
@@ -83,7 +83,7 @@ function down_book(arg) {
                 <i class="fa fa-star-o text-muted"></i>
               </div>
                <div class="center text-center m-t-n">
-                <i  style="cursor:pointer" onclick='down_book(this)' tag="{{ x.content['id'] }}" class="icon-cloud-download i-3x"></i>
+                <span  style="cursor:pointer" onclick='down_book(this)'  title="{{ x.content['id'] }}" class="icon-cloud-download i-3x"></span>
               </div>
               <!-- <div class="center text-center m-t-n">
                 <a href="#"><i class="icon-control-down i-2x"></i></a>
@@ -94,7 +94,7 @@ function down_book(arg) {
                   <i class="fa fa-heart text-active text-danger"></i>
                 </a>
                 <a href="#" class="" data-toggle="class">
-                  <i style="cursor:pointer" onclick='down_book(this)' tag="{{ x.content['id'] }}"  class="fa fa-plus-square text"></i>
+                  <i style="cursor:pointer" onclick='down_book(this)' title="{{ x.content['id'] }}"  class="fa fa-plus-square text"></i>
                 </a>
               </div>
             </div>
@@ -135,9 +135,9 @@ function down_book(arg) {
         <div class="list-group bg-white list-group-lg no-bg auto">
           {% for x in book %}
           <a href="#" class="list-group-item clearfix">
-            <span class="pull-right h2 text-muted m-l">1</span>
-            <span class="pull-left thumb-sm avatar m-r">
-              <img src="{{ x.content['images']['small'] }}" alt="...">
+            <span class="pull-right h2 text-muted m-l"></span>
+            <span class="pull-left thumb-sm  m-r">
+              <img src="{{ x.content['images']['small'] }}" alt="{{ x.content['author'][0] }}">
             </span>
             <span class="clear">
               <span>{{ x.content['author'][0] }}</span>

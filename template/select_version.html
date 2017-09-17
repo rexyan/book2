@@ -12,42 +12,29 @@
     <script>
         function push_down_email(id,type) {
             if (type == '1'){
-               var method = 'GET'
+                window.location = '/push_down_book?id='+id+'&type='+type
             }else {
-               var method = 'POST'
-            }
-            $.ajax({
-                  type: method,
-                  url: '/push_down_book',
-                  data: {'id':id,'type':type},
-                  success:function (arg, status, request) {
-                      window.obj = (JSON.parse(arg))
-                      console.log(window.obj)
-                      if (method == 'GET'){
-                          var disp = arg.getResponseHeader('Content-Disposition');
-                          if (disp && disp.search('attachment') != -1) {  //判断是否为文件
-                                var form = $('<form method="POST" action="' + url + '">');
-                                $.each(params, function(k, v) {
-                                    form.append($('<input type="hidden" name="' + k +
-                                            '" value="' + v + '">'));
-                                });
-                                $('body').append(form);
-                                form.submit(); //自动提交
+                var method = 'POST'
+                $.ajax({
+                      type: method,
+                      url: '/push_down_book',
+                      data: {'id':id,'type':type},
+                      success:function (arg, status, request) {
+                          window.obj = (JSON.parse(arg))
+                          console.log(window.obj)
+                          if (window.obj['code']==false){
+                                layer.alert( window.obj['data'], {icon: 5});
+                          }else{
+                                layer.alert( window.obj['data'], {icon: 6});
+                          }
+                      },
+                        error: function(XMLHttpRequest) {
+                            if ((XMLHttpRequest.status) == 403){
+                                 layer.alert('未登录，请登录后再进行操作！', {icon: 5});
                             }
-                      }
-
-                      if (window.obj['code']==false){
-                            layer.alert( window.obj['data'], {icon: 5});
-                      }else{
-                            layer.alert( window.obj['data'], {icon: 6});
-                      }
-                  },
-                    error: function(XMLHttpRequest) {
-                        if ((XMLHttpRequest.status) == 403){
-                             layer.alert('未登录，请登录后再进行操作！', {icon: 5});
                         }
-                    }
-                });
+                    });
+            }
         }
     </script>
 </head>
@@ -67,7 +54,7 @@
                 <i class="fa fa-thumbs-up text-success"></i> &nbsp; 由用户  &nbsp; “{{ x.user_name }}” &nbsp; 上传
               </span>
             </a>
-              <button type="button" class="btn btn-default">推荐次数:{{ x.down_count }}</button>
+              <button type="button" class="btn btn-default">下载 + 推送次数:{{ x.push_down_count }}</button>
               <button type="button" class="btn btn-warning" onclick="push_down_email('{{ x.id }}',1)">下载到本地</button>
               <button type="button" class="btn btn-success" onclick="push_down_email('{{ x.id }}',2)">推送到邮箱</button>
         </p>

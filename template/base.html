@@ -1102,18 +1102,21 @@
               <section class="vbox animated fadeInRight">
                 <section class="w-f-md scrollable hover">
                   <h5 class="font-thin m-l-md m-t">下载排行</h5>
-                  <ul class="list-group no-bg no-borders auto m-t-n-xxs">
+                  {% for x in book_down_order_data %}
+                  <ul style="cursor:pointer" class="list-group no-bg no-borders auto m-t-n-xxs"  title="{{ x.content['id'] }}" onclick="down_book(this)">
                     <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/a1.png" alt="..." class="img-circle">
+                      <!--<span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm" style="border: 1px solid red">-->
+                      <span class="pull-left thumb-xs m-t-xs m-l-xs m-r-sm">
+                        <img src="{{ x.content['images']['small'] }}" alt="{{ x.content['title'] }}" >
                         <i class="on b-light right sm"></i>
                       </span>
                       <div class="clear">
-                        <div><a href="#">Chris Fox</a></div>
-                        <small class="text-muted">New York</small>
+                        <div><a href="#">{{ x.content['title'] }}</a></div>
+                        <small class="text-muted">{{ x.content['author'][0] }}</small>
                       </div>
                     </li>
                   </ul>
+                  {% end %}
                 </section>
               </section>
             </aside>
