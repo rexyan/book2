@@ -298,3 +298,30 @@
 09-17 13:46:39.758 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
 09-17 13:47:07.223 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
 09-17 13:48:04.491 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 15:56:34.686 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 16:08:15.034 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 16:14:11.152 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 16:15:24.224 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <common.qiniu.auth.Auth object at 0x00000000058E5588>.
+09-17 16:15:24.399 DEBUG qiniu.py [upload_file_to_qiniu] [41] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505636124.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505636124.txt"}, req_id:FV8AAJ90bgcXGOUU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:2;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:10;rs-upload.putFile:13;UP:15
+09-17 16:15:31.646 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005A955F8>.
+09-17 16:15:31.703 DEBUG qiniu.py [upload_file_to_qiniu] [41] - upload_file_to_qiniu{u'hash': u'Fps47SyDw9s4eOMxlFUkdxQ588vW', u'key': u'1505636131.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"Fps47SyDw9s4eOMxlFUkdxQ588vW","key":"1505636131.txt"}, req_id:TkkAAIURdLsYGOUU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_3.sel/not found;rs36_3.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:2;rs.put:3;rs-upload.putFile:5;UP:7
+09-17 16:18:36.103 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 16:19:31.674 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 16:22:41.267 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 16:23:56.525 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 16:24:19.223 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 16:24:31.311 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005A05320>.
+09-17 16:24:31.579 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505636131.txt?e=1505640271&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:jV6K3rEzf-FI1vf-JxTSAWklpxE=
+09-17 16:26:13.853 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 16:26:19.973 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <common.qiniu.auth.Auth object at 0x000000000578BEF0>.
+09-17 16:26:20.151 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505636131.txt?e=1505640379&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:Xupu9INAoiRVnAjmx8A1LTfIrBk=
+09-17 16:28:12.899 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 16:28:22.849 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0000000005610630>.
+09-17 16:28:22.992 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505636124.txt?e=1505640502&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:aJ_fJD1sZ1_0uO2V9qlXM8zU6aY=
+09-17 16:28:25.961 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <common.qiniu.auth.Auth object at 0x000000000579D710>.
+09-17 16:28:26.100 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1505636124.txt?e=1505640505&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:5VTJIvBkLTtYNdqvsZHTM5IGGsM=
+09-17 16:30:25.767 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 17:08:08.341 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 17:08:58.805 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 17:09:16.050 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-17 17:11:59.271 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.

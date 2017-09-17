@@ -39,7 +39,7 @@ layer.open({
           <section class="w-f-md">
             <section class="hbox stretch bg-black dker">
               <!-- side content -->
-              <aside class="col-sm-5 no-padder" id="sidebar">
+              <aside style="background:whitesmoke" class="col-sm-5 no-padder" id="sidebar">
                 <section class="vbox animated fadeInUp">
                   <section class="scrollable">
                     <div class="m-t-n-xxs item pos-rlt">
@@ -53,11 +53,12 @@ layer.open({
                         </span>
                       </div>
                       <div class="bottom gd bg-info wrapper-lg">
-                        <span class="pull-right text-sm">用户昵称<br>2017-01</span>
-                        <span class="h2 font-thin">《挪威的森林》</span>
+                        <span class="pull-right text-sm">Rex<br>2017-01</span>
+                        <span class="h3 font-thin">本周推荐：《挪威的森林》</span>
                       </div>
                       <img class="img-full" src="{{static_url('images/m43.jpg')}}" alt="...">
                     </div>
+                    {% for x in book%}
                     <ul class="list-group list-group-lg no-radius no-border no-bg m-t-n-xxs m-b-none auto">
                       <li class="list-group-item">
                         <div class="pull-right m-l">
@@ -69,16 +70,17 @@ layer.open({
                           <i class="icon-control-pause text-active"></i>
                         </a>
                         <div class="clear text-ellipsis">
-                          <span>《爱你就像爱生命》</span>
-                          <span class="text-muted"> -- 一小时前</span>
+                          <span>{{ x.content['title'] }}</span>
+                          <span class="text-muted"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ x.up_time }}</span>
                         </div>
                       </li>
                     </ul>
+                    {% end %}
                   </section>
                 </section>
               </aside>
               <!-- / side content -->
-              <section class="col-sm-4 no-padder bg">
+              <section style="background: whitesmoke;" class="col-sm-4 no-padder bg">
                 <section class="vbox">
                   <section class="scrollable hover">
                     <ul class="list-group list-group-lg no-bg auto m-b-none m-t-n-xxs">
@@ -100,7 +102,7 @@ layer.open({
                   </section>
                 </section>
               </section>
-              <section class="col-sm-3 no-padder lt">
+              <section style="background: whitesmoke" class="col-sm-3 no-padder lt">
                 <section class="vbox">
                   <form class="form-horizontal">
                   <!--<section class="scrollable hover">-->

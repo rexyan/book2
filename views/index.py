@@ -17,18 +17,30 @@ log = getLogger('index.py')
 
 class IndexHandler(BaseHandler):
     def get(self):
-        book = get_hot_book()
+        # 首页部分（按时间排序）
+        book = get_hot_book_time()
 
-        # 下载排行
+        # 下载排行（按下载推荐数）
         book_down_order_id = get_order_book_down()
         book_down_order_id_list =  [x.book_id for x in book_down_order_id]
-        book_down_order_data = get_book_id(book_down_order_id_list)
-        self.render('index.html', book=book, book_down_order_data = book_down_order_data)
+        book_down_order_data = get_book_info(book_down_order_id_list)
+
+        # 热门作家（按书籍评分）
+        hot_author_order_id = get_order_author()
+        order_author_list = [x.content['id'] for x in hot_author_order_id]
+        hot_author_order_data = get_book_info(order_author_list)
+
+        self.render('index.html', book=book, book_down_order_data = book_down_order_data, hot_author_order_data= hot_author_order_data)
 
 
 class UploadHandler(BaseHandler):
     def get(self):
-        book = get_hot_book()
+        # 第一列（按时间）
+        book = get_hot_book_time()
+
+        # 第二列（tag排序）
+        for x in get_order_tag():
+            print x
         self.render('upload.html', book=book)
 
     def post(self):
@@ -302,6 +314,8 @@ class Push_Or_DownHandler(BaseHandler):
             status=status
         )
         down_obj.save()
+        obj.push_down_count = obj.push_down_count + 1
+        obj.save()
         os.remove(os.path.join(tmp_path, key))
 
     @auth.authenticated

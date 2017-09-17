@@ -79,6 +79,7 @@ class User(models.Document, BaseDoc):
 
 class BookCache(models.Document, BaseDoc):  # 从豆瓣获取书籍信息后，将此书信息保存
     content = models.DictField(max_length=8000)  # json内容
+    up_time = models.DateTimeField(default=datetime.datetime.now)
 
 
 class File_Map(models.Document, BaseDoc):
