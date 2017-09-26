@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <script src='https://cdn.bootcss.com/echarts/3.2.2/echarts.simple.js'></script>
+    <script type="text/javascript" src="http://data-visual.cn/datav/src/js/echarts/extension/echarts-wordcloud.min.js"></script>
+</head>
+
+<body>
+    <style>
+        html,
+        body,
+        #main {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+    <div id="main" style="width:100%px;height:100%px; ">
+    </div>
+    <script type="text/javascript ">
+        var myChart = echarts.init(document.getElementById('main'));
+        var option = {
+    "_index_flag": 1959504, 
+    "backgroundColor": "#fff", 
+    "title": [
+        {
+            "textStyle": {
+                "color": "#000", 
+                "fontSize": 18
+            }, 
+            "subtext": "", 
+            "text": "", 
+            "top": "auto", 
+            "subtextStyle": {
+                "color": "#aaa", 
+                "fontSize": 12
+            }, 
+            "left": "auto"
+        }
+    ], 
+    "series": [
+        {
+            "rotationStep": 45, 
+            "girdSize": 20, 
+            "shape": "circle", 
+            "sizeRange": [
+                20, 
+                100
+            ], 
+            "name": "", 
+            "rotationRange": [
+                -90, 
+                90
+            ], 
+            "type": "wordCloud", 
+            "data": [
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(48,48,109)"
+                        }
+                    }, 
+                    "name": "Sam S Club", 
+                    "value": 10000
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(45,137,77)"
+                        }
+                    }, 
+                    "name": "Macys", 
+                    "value": 6181
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(139,13,153)"
+                        }
+                    }, 
+                    "name": "Amy Schumer", 
+                    "value": 4386
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(48,71,156)"
+                        }
+                    }, 
+                    "name": "Jurassic World", 
+                    "value": 4055
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(144,83,92)"
+                        }
+                    }, 
+                    "name": "Charter Communications", 
+                    "value": 2467
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(11,10,132)"
+                        }
+                    }, 
+                    "name": "Chick Fil A", 
+                    "value": 2244
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(99,145,5)"
+                        }
+                    }, 
+                    "name": "Planet Fitness", 
+                    "value": 1898
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(106,12,148)"
+                        }
+                    }, 
+                    "name": "Pitch Perfect", 
+                    "value": 1484
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(60,28,92)"
+                        }
+                    }, 
+                    "name": "Express", 
+                    "value": 1112
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(52,31,98)"
+                        }
+                    }, 
+                    "name": "Home", 
+                    "value": 965
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(59,9,149)"
+                        }
+                    }, 
+                    "name": "Johnny Depp", 
+                    "value": 847
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(110,116,99)"
+                        }
+                    }, 
+                    "name": "Lena Dunham", 
+                    "value": 582
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(41,28,142)"
+                        }
+                    }, 
+                    "name": "Lewis Hamilton", 
+                    "value": 555
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(39,101,132)"
+                        }
+                    }, 
+                    "name": "KXAN", 
+                    "value": 550
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(30,79,3)"
+                        }
+                    }, 
+                    "name": "Mary Ellen Mark", 
+                    "value": 462
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(51,82,19)"
+                        }
+                    }, 
+                    "name": "Farrah Abraham", 
+                    "value": 366
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(151,39,116)"
+                        }
+                    }, 
+                    "name": "Rita Ora", 
+                    "value": 360
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(2,48,104)"
+                        }
+                    }, 
+                    "name": "Serena Williams", 
+                    "value": 282
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(157,146,104)"
+                        }
+                    }, 
+                    "name": "NCAA baseball tournament", 
+                    "value": 273
+                }, 
+                {
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(22,120,48)"
+                        }
+                    }, 
+                    "name": "Point Break", 
+                    "value": 265
+                }
+            ]
+        }
+    ], 
+    "toolbox": {
+        "feature": {
+            "saveAsImage": {
+                "show": true
+            }
+        }, 
+        "top": "center", 
+        "left": "right", 
+        "orient": "vertical", 
+        "show": true
+    }, 
+    "legend": [
+        {
+            "data": []
+        }
+    ], 
+    "tooltip": {}
+};
+        myChart.setOption(option);
+    </script>
+</body>
+
+</html>

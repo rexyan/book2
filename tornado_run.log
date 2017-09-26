@@ -325,3 +325,26 @@
 09-17 17:08:58.805 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
 09-17 17:09:16.050 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
 09-17 17:11:59.271 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-26 14:22:30.339 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-26 14:31:09.893 DEBUG send_mail.py [email] [26] - 普通邮件发送成功[u'rs.yan@idiaoyan.com']http://127.0.0.1:3344/activation/?user_key=641d72f51610a0c07889da77ebd3d31209d2cb39Kindle15-账户激活[u'kinlde15', u'book@kindle15.com']
+09-26 14:33:02.602 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <common.qiniu.auth.Auth object at 0x056C7F50>.
+09-26 14:33:02.734 DEBUG qiniu.py [upload_file_to_qiniu] [41] - upload_file_to_qiniu{u'hash': u'FmKl-S5oud6uBSnpGbloJ139efC3', u'key': u'1506407582.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FmKl-S5oud6uBSnpGbloJ139efC3","key":"1506407582.txt"}, req_id:FkMAAHfDCQe31ecU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;mc.s/500;mc.d/404;mc.d/404;RS:3;rs.put:8;rs-upload.putFile:9;UP:13
+09-26 14:33:14.072 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <common.qiniu.auth.Auth object at 0x053AF250>.
+09-26 14:33:14.253 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1506407582.txt?e=1506411194&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:Iv0pczEK9Vn6Ckfk29UKqx1kPyU=
+09-26 14:33:29.234 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <common.qiniu.auth.Auth object at 0x02F40350>.
+09-26 14:33:29.328 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1506407582.txt?e=1506411209&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:fOQSCrfk5HIXEh45xVWWsI9Qoqc=
+09-26 14:33:32.546 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <common.qiniu.auth.Auth object at 0x0526CD70>.
+09-26 14:33:32.665 DEBUG qiniu.py [get_file_on_qiniu] [54] - get_file_on_qiniu200http://ovsf3r7sm.bkt.clouddn.com/1506407582.txt?e=1506411212&token=Pn_iwLLyDJWqohfT0fF1YlIjfD9u-L1SP76LyCpT:bV_XAp5AT2CDZXRzrre9VQrr22Q=
+09-26 14:33:33.663 DEBUG send_mail.py [email_att] [67] - 附件邮件发送成功rs.yan@idiaoyan.comKindle15电子书推送[u'kinlde15\u63a8\u9001', u'push@kindle15.com']
+09-26 15:41:09.967 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-26 15:42:32.446 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-26 15:44:09.308 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-26 15:44:32.513 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-26 16:14:02.021 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-26 16:49:03.263 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-26 16:53:13.797 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-26 16:53:37.653 DEBUG main.py [<module>] [23] - Tornado server started on port 3344.
+09-26 16:58:42.156 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <common.qiniu.auth.Auth object at 0x051756B0>.
+09-26 16:58:42.195 DEBUG qiniu.py [upload_file_to_qiniu] [41] - upload_file_to_qiniu{u'hash': u'FmKl-S5oud6uBSnpGbloJ139efC3', u'key': u'1506416322.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FmKl-S5oud6uBSnpGbloJ139efC3","key":"1506416322.txt"}, req_id:EHsAAIit09Gp3ecU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;PFDS;PFDS;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel/not found;rs36_12.ups;rwro.upsc:1;RS:2;rs.put:7;rs-upload.putFile:8;UP:9
+09-26 16:59:28.396 DEBUG qiniu.py [authentication_qiniu] [21] - authentication_qiniu <common.qiniu.auth.Auth object at 0x07017B90>.
+09-26 16:59:28.428 DEBUG qiniu.py [upload_file_to_qiniu] [41] - upload_file_to_qiniu{u'hash': u'FmKl-S5oud6uBSnpGbloJ139efC3', u'key': u'1506416368.txt'}exception:None, status_code:200, _ResponseInfo__response:<Response [200]>, text_body:{"hash":"FmKl-S5oud6uBSnpGbloJ139efC3","key":"1506416368.txt"}, req_id:X2sAAJE4apW03ecU, x_log:body;s.ph;s.put.tw;s.put.tr;s.put.tw;s.put.tr;s.ph;PFDS;PFDS:1;rdb.g/no such key;DBD/404;v4.get/Document not found;rs36_12.sel:4/not found;rs36_12.ups:4;rwro.upsc:9;RS:10;rs.put:10;rs-upload.putFile:12;UP:15

@@ -295,7 +295,7 @@ class Push_Or_DownHandler(BaseHandler):
             down_status = up_qiniu.down_file(url, key, tmp_path)
             user = self.session.get('user_id')
             if down_status:
-                if type == '1': # 下载
+                if type == '1':  # 下载
                     down_data_file = os.path.join(tmp_path, key)
                     self.set_header('Content-Type', 'application/octet-stream')
                     self.set_header('Content-Disposition', 'attachment; filename=' + key)
@@ -353,4 +353,20 @@ class Push_Or_DownHandler(BaseHandler):
             push_obj.save()
             obj.push_down_count = obj.push_down_count+1
             obj.save()
-            self.write_json(code=status,data=data)
+            self.write_json(code=status, data=data)
+
+
+class CiYuWordCloud(BaseHandler):
+
+    def get(self):
+        from pyecharts import WordCloud
+        name = ['Sam S Club', 'Macys', 'Amy Schumer', 'Jurassic World', 'Charter Communications',
+                'Chick Fil A', 'Planet Fitness', 'Pitch Perfect', 'Express', 'Home', 'Johnny Depp',
+                'Lena Dunham', 'Lewis Hamilton', 'KXAN', 'Mary Ellen Mark', 'Farrah Abraham',
+                'Rita Ora', 'Serena Williams', 'NCAA baseball tournament', 'Point Break']
+        value = [10000, 6181, 4386, 4055, 2467, 2244, 1898, 1484, 1112, 965, 847, 582, 555,
+                 550, 462, 366, 360, 282, 273, 265]
+        wordcloud = WordCloud(width='100%', height='100%')
+        wordcloud.add("", name, value, word_size_range=[20, 100])
+        wordcloud.render(path=os.path.join('template', 'render.html'))
+        self.render('render.html')

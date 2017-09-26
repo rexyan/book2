@@ -15,4 +15,5 @@ url = [
         (r"/activation/(\w*)", ActivaHandler),
         (r"/select_version", SelectVersionHandler),
         (r"/push_down_book", Push_Or_DownHandler),
+        (r"/ciyu", CiYuWordCloud),
       ]

@@ -34,8 +34,34 @@ function down_book(arg) {
             content: '/select_version?book_id='+id //iframe的url
     });
 }
+
+function resizeimg(obj,maxW,maxH)
+{
+         var imgW=obj.width;
+         var imgH=obj.height;
+         if(imgW>maxW||imgH>maxH)
+         {
+                  var ratioA=imgW/maxW;
+                  var ratioB=imgH/maxH;
+                  if(ratioA>ratioB)
+                  {
+                           imgW=maxW;
+                           imgH=maxW*(imgH/imgW);
+                  }
+                  else
+                  {
+                           imgH=maxH;
+                           imgW=maxH*(imgW/imgH);
+                  }
+                  obj.width=imgW;
+                  obj.height=imgH;
+         }
+}
+
 </script>
 {% end %}
+
+{% block css %}{% end %}
 
 {% block body %}
   <section class="scrollable padder-lg w-f-md" id="bjax-target">
@@ -98,7 +124,7 @@ function down_book(arg) {
                 </a>
               </div>
             </div>
-            <a href="#"><img style="height: 270px;" src='{{ x.content["images"]["large"] }}' alt="" class="r r-2x img-full"></a>
+            <a href="#"><img  onload="resizeimg(this,238,285)"  style="" src='{{ x.content["images"]["large"] }}' alt="" class="r r-2x img-full"></a>
           </div>
           <div class="padder-v">
             <a href="#" class="text-ellipsis"><strong>{{ x.content['title'] }}</strong></a>
@@ -109,25 +135,28 @@ function down_book(arg) {
       {% end %}
     </div>
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-md-7 .hidden-xs">
         <h4 class="font-thin">热门词云</h4>
-        <div class="row row-sm">
-          <div class="col-xs-6 col-sm-3">
-            <div class="item">
-              <div class="pos-rlt">
-                <div class="">
-                  <div class="center text-center m-t-n">
-                    <a href="#"><i class=""></i></a>
-                  </div>
-                </div>
-                <a href="#"><img src="{{static_url('images/a2.png')}}" alt="" class="r r-2x img-full"></a>
-              </div>
-              <div class="padder-v">
-                <a href="#" class="text-ellipsis">文学</a>
-                <a href="#" class="text-ellipsis text-xs text-muted">小说、散文、戏剧</a>
-              </div>
-            </div>
-          </div>
+        <div id=ciyun class="row row-sm" style="">
+          <iframe src="/ciyu"  style="_height:400px; min-height:400px;_width:600px; min-width:800px;" frameborder="0">
+
+          </iframe>
+          <!--<div class="col-xs-6 col-sm-3">-->
+            <!--<div class="item">-->
+              <!--<div class="pos-rlt">-->
+                <!--<div class="">-->
+                  <!--<div class="center text-center m-t-n">-->
+                    <!--<a href="#"><i class=""></i></a>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<a href="#"><img src="{{static_url('images/a2.png')}}" alt="" class="r r-2x img-full"></a>-->
+              <!--</div>-->
+              <!--<div class="padder-v">-->
+                <!--<a href="#" class="text-ellipsis">文学</a>-->
+                <!--<a href="#" class="text-ellipsis text-xs text-muted">小说、散文、戏剧</a>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
         </div>
       </div>
       <div class="col-md-5">
