@@ -10,11 +10,13 @@ from tornado.web import HTTPError
 import functools
 from bson import ObjectId
 
+
 def get_user(user_id):
     try:
         return User.objects.get(id=ObjectId(user_id))
     except User.DoesNotExist:
         return None
+
 
 def authenticated(method):
     '''
@@ -82,8 +84,16 @@ def randomstring(n):
     return (''.join(map(lambda xx: (hex(ord(xx))[2:]), os.urandom(n))))[0:40]
 
 
-
-
+def upload_file(file, path):
+    if file is not None:
+        filename = u"{0}_{1}".format(datetime.datetime.now().strftime("%Y%m%d-%H%M%S"), file["filename"])
+        if not os.path.exists(path):
+            os.makedirs(path)
+        filepath = os.path.join(path, filename)
+        with open(filepath, "wb") as f:
+            f.write(file["body"])
+            f.close()
+        return filepath
 
 
 if __name__ == '__main__':

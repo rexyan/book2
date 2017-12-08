@@ -214,8 +214,8 @@ class UpFileToServerHandler(BaseHandler):
                 break
         if is_save:
             author_obj = Author(
-                name=book_info['content']['author'][0],
-                introduction=book_info['content']['author_intro']
+                name = book_info['content']['author'][0],
+                introduction = book_info['content']['author_intro']
             )
             author_obj.save()
         else:
@@ -267,6 +267,7 @@ class ActivaHandler(BaseHandler):
             data = u'param_error'
         self.redirect("/login?user_active="+str(status))
         #self.write_json(code=status, data=data)
+
 
 class SelectVersionHandler(BaseHandler):
     def get(self):
@@ -331,7 +332,7 @@ class Push_Or_DownHandler(BaseHandler):
             tmp_path = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")), 'tmp_file','download_file')
             down_status = up_qiniu.down_file(url, key, tmp_path)
             if down_status:
-                if type =='2': # 推送
+                if type == '2': # 推送
                     user = self.session.get('user_id')
                     email_status = send_mail.email_att(user['mail'], '', settings.EMAIL_PUSH_SUBJECT, settings.EMAIL_PUSH_SENDER, os.path.join(tmp_path,key), key)
                     if email_status:
@@ -346,7 +347,7 @@ class Push_Or_DownHandler(BaseHandler):
             else:
                 data = u'文件获取失败'
             push_obj = Push(
-                user_id =user['id'] ,
+                user_id = user['id'] ,
                 book_id = id,
                 status = status
             )
